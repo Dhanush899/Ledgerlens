@@ -1,0 +1,1171 @@
+[
+  {
+    "po_number": "PO-2026-0033",
+    "vendor_id": "V01",
+    "date": "2026-08-14",
+    "lines": [
+      {
+        "sku": "MS-ANG-50",
+        "description": "MS Angle 50x50x5 mm (kg)",
+        "qty": 1042,
+        "unit_price": 68.45,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0034",
+    "vendor_id": "V12",
+    "date": "2026-08-16",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "description": "Fastener kit M8-M16 assorted",
+        "qty": 37,
+        "unit_price": 845.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "WR-E6013",
+        "description": "Welding rods E6013 3.15 mm (pkt)",
+        "qty": 10,
+        "unit_price": 1265.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GLV-NIT",
+        "description": "Nitrile safety gloves (pair)",
+        "qty": 366,
+        "unit_price": 96.35,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0035",
+    "vendor_id": "V06",
+    "date": "2026-08-21",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "description": "Blue masterbatch (kg)",
+        "qty": 89,
+        "unit_price": 245.3,
+        "gst_rate": 18
+      },
+      {
+        "sku": "PP-GR",
+        "description": "PP granules injection grade (kg)",
+        "qty": 1133,
+        "unit_price": 109.75,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0036",
+    "vendor_id": "V17",
+    "date": "2026-08-16",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 53,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BRO-A4",
+        "description": "A4 tri-fold brochure",
+        "qty": 1212,
+        "unit_price": 18.35,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0037",
+    "vendor_id": "V03",
+    "date": "2026-08-15",
+    "lines": [
+      {
+        "sku": "LED-40",
+        "description": "LED panel 40W 2x2 ft",
+        "qty": 39,
+        "unit_price": 1349.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "MCB-32DP",
+        "description": "MCB 32A double pole",
+        "qty": 56,
+        "unit_price": 612.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "CU-4SQ",
+        "description": "Copper cable 4 sq mm FRLS (m)",
+        "qty": 1360,
+        "unit_price": 58.2,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0038",
+    "vendor_id": "V11",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "O2-7M3",
+        "description": "Oxygen cylinder refill 7 m3",
+        "qty": 126,
+        "unit_price": 385.65,
+        "gst_rate": 18
+      },
+      {
+        "sku": "AR-7M3",
+        "description": "Argon cylinder refill 7 m3",
+        "qty": 29,
+        "unit_price": 1240.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "CO2-30",
+        "description": "CO2 cylinder refill 30 kg",
+        "qty": 24,
+        "unit_price": 612.35,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0039",
+    "vendor_id": "V08",
+    "date": "2026-08-18",
+    "lines": [
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 59,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0040",
+    "vendor_id": "V05",
+    "date": "2026-08-20",
+    "lines": [
+      {
+        "sku": "STAT-KIT",
+        "description": "Stationery kit (pens, files, pads)",
+        "qty": 35,
+        "unit_price": 364.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 82,
+        "unit_price": 289.55,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0041",
+    "vendor_id": "V16",
+    "date": "2026-08-25",
+    "lines": [
+      {
+        "sku": "OPC-53",
+        "description": "OPC 53 grade cement (50 kg bag)",
+        "qty": 212,
+        "unit_price": 385.5,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0042",
+    "vendor_id": "V02",
+    "date": "2026-08-19",
+    "lines": [
+      {
+        "sku": "TAPE-48",
+        "description": "BOPP tape 48 mm x 65 m",
+        "qty": 251,
+        "unit_price": 38.75,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0043",
+    "vendor_id": "V05",
+    "date": "2026-08-25",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 101,
+        "unit_price": 289.55,
+        "gst_rate": 12
+      },
+      {
+        "sku": "STAT-KIT",
+        "description": "Stationery kit (pens, files, pads)",
+        "qty": 58,
+        "unit_price": 364.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TONER-88",
+        "description": "Toner cartridge 88A compatible",
+        "qty": 18,
+        "unit_price": 2450.35,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0044",
+    "vendor_id": "V07",
+    "date": "2026-08-25",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "description": "Poly-cotton 65/35 (m)",
+        "qty": 1221,
+        "unit_price": 138.6,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CANVAS-12",
+        "description": "Canvas 12 oz (m)",
+        "qty": 465,
+        "unit_price": 212.8,
+        "gst_rate": 5
+      },
+      {
+        "sku": "DRILL-CT",
+        "description": "Cotton drill fabric 2/1 (m)",
+        "qty": 806,
+        "unit_price": 164.25,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0045",
+    "vendor_id": "V13",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "description": "Duplex board 300 gsm (kg)",
+        "qty": 1117,
+        "unit_price": 62.3,
+        "gst_rate": 12
+      },
+      {
+        "sku": "KRAFT-120",
+        "description": "Kraft paper 120 gsm (kg)",
+        "qty": 3922,
+        "unit_price": 48.65,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0046",
+    "vendor_id": "V10",
+    "date": "2026-08-26",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "description": "Black pepper whole (kg)",
+        "qty": 17,
+        "unit_price": 684.5,
+        "gst_rate": 5
+      },
+      {
+        "sku": "TUR-KG",
+        "description": "Turmeric powder (kg)",
+        "qty": 44,
+        "unit_price": 312.4,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0047",
+    "vendor_id": "V01",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "MS-ANG-50",
+        "description": "MS Angle 50x50x5 mm (kg)",
+        "qty": 1077,
+        "unit_price": 68.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TMT-12",
+        "description": "TMT Bar Fe500 12 mm (kg)",
+        "qty": 1611,
+        "unit_price": 61.85,
+        "gst_rate": 18
+      },
+      {
+        "sku": "MS-PLT-10",
+        "description": "MS Plate 10 mm (kg)",
+        "qty": 777,
+        "unit_price": 72.1,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0048",
+    "vendor_id": "V03",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "MCB-32DP",
+        "description": "MCB 32A double pole",
+        "qty": 109,
+        "unit_price": 612.4,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0049",
+    "vendor_id": "V07",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "description": "Poly-cotton 65/35 (m)",
+        "qty": 312,
+        "unit_price": 138.6,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0050",
+    "vendor_id": "V12",
+    "date": "2026-08-24",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "description": "Fastener kit M8-M16 assorted",
+        "qty": 20,
+        "unit_price": 845.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "WR-E6013",
+        "description": "Welding rods E6013 3.15 mm (pkt)",
+        "qty": 36,
+        "unit_price": 1265.45,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0051",
+    "vendor_id": "V18",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "CTC-KG",
+        "description": "Assam CTC tea BOP (kg)",
+        "qty": 194,
+        "unit_price": 286.4,
+        "gst_rate": 5
+      },
+      {
+        "sku": "GRN-KG",
+        "description": "Green tea leaf (kg)",
+        "qty": 52,
+        "unit_price": 512.75,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0052",
+    "vendor_id": "V04",
+    "date": "2026-08-28",
+    "lines": [
+      {
+        "sku": "IPA-L",
+        "description": "Isopropyl alcohol industrial grade (L)",
+        "qty": 233,
+        "unit_price": 142.6,
+        "gst_rate": 12
+      },
+      {
+        "sku": "NAOH-KG",
+        "description": "Caustic soda flakes (kg)",
+        "qty": 588,
+        "unit_price": 54.35,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0053",
+    "vendor_id": "V15",
+    "date": "2026-08-25",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1276,
+        "unit_price": 132.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SG-500",
+        "description": "SG iron casting 500/7 (kg)",
+        "qty": 869,
+        "unit_price": 158.9,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0054",
+    "vendor_id": "V17",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "BRO-A4",
+        "description": "A4 tri-fold brochure",
+        "qty": 2709,
+        "unit_price": 18.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 13,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0055",
+    "vendor_id": "V17",
+    "date": "2026-08-30",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 25,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BRO-A4",
+        "description": "A4 tri-fold brochure",
+        "qty": 1316,
+        "unit_price": 18.35,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0056",
+    "vendor_id": "V11",
+    "date": "2026-08-29",
+    "lines": [
+      {
+        "sku": "CO2-30",
+        "description": "CO2 cylinder refill 30 kg",
+        "qty": 18,
+        "unit_price": 612.35,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0057",
+    "vendor_id": "V06",
+    "date": "2026-08-29",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "description": "Blue masterbatch (kg)",
+        "qty": 114,
+        "unit_price": 245.3,
+        "gst_rate": 18
+      },
+      {
+        "sku": "HDPE-GR",
+        "description": "HDPE granules blow grade (kg)",
+        "qty": 1024,
+        "unit_price": 118.4,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0058",
+    "vendor_id": "V08",
+    "date": "2026-08-29",
+    "lines": [
+      {
+        "sku": "SH-EN8-40",
+        "description": "Shaft EN8 40 mm x 1 m",
+        "qty": 23,
+        "unit_price": 2210.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 11,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GC-4",
+        "description": "Gear coupling size 4",
+        "qty": 13,
+        "unit_price": 4375.0,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0059",
+    "vendor_id": "V15",
+    "date": "2026-08-28",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1377,
+        "unit_price": 132.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SG-500",
+        "description": "SG iron casting 500/7 (kg)",
+        "qty": 1058,
+        "unit_price": 158.9,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0060",
+    "vendor_id": "V03",
+    "date": "2026-08-29",
+    "lines": [
+      {
+        "sku": "LED-40",
+        "description": "LED panel 40W 2x2 ft",
+        "qty": 74,
+        "unit_price": 1349.0,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0061",
+    "vendor_id": "V13",
+    "date": "2026-08-29",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "description": "Duplex board 300 gsm (kg)",
+        "qty": 1426,
+        "unit_price": 62.3,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0062",
+    "vendor_id": "V02",
+    "date": "2026-08-27",
+    "lines": [
+      {
+        "sku": "BOX-5PLY",
+        "description": "Corrugated box 5-ply 18x12x10 in",
+        "qty": 1452,
+        "unit_price": 42.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FILM-23",
+        "description": "Stretch film roll 23 micron",
+        "qty": 37,
+        "unit_price": 1185.55,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0063",
+    "vendor_id": "V11",
+    "date": "2026-09-01",
+    "lines": [
+      {
+        "sku": "CO2-30",
+        "description": "CO2 cylinder refill 30 kg",
+        "qty": 27,
+        "unit_price": 612.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "AR-7M3",
+        "description": "Argon cylinder refill 7 m3",
+        "qty": 38,
+        "unit_price": 1240.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "O2-7M3",
+        "description": "Oxygen cylinder refill 7 m3",
+        "qty": 71,
+        "unit_price": 385.65,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0064",
+    "vendor_id": "V13",
+    "date": "2026-09-04",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "description": "Duplex board 300 gsm (kg)",
+        "qty": 2131,
+        "unit_price": 62.3,
+        "gst_rate": 12
+      },
+      {
+        "sku": "KRAFT-120",
+        "description": "Kraft paper 120 gsm (kg)",
+        "qty": 1744,
+        "unit_price": 48.65,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0065",
+    "vendor_id": "V01",
+    "date": "2026-09-02",
+    "lines": [
+      {
+        "sku": "MS-PLT-10",
+        "description": "MS Plate 10 mm (kg)",
+        "qty": 310,
+        "unit_price": 72.1,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TMT-12",
+        "description": "TMT Bar Fe500 12 mm (kg)",
+        "qty": 1558,
+        "unit_price": 61.85,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0066",
+    "vendor_id": "V05",
+    "date": "2026-08-31",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 81,
+        "unit_price": 289.55,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0067",
+    "vendor_id": "V10",
+    "date": "2026-09-06",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "description": "Black pepper whole (kg)",
+        "qty": 19,
+        "unit_price": 684.5,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CARD-KG",
+        "description": "Cardamom 7 mm (kg)",
+        "qty": 5,
+        "unit_price": 2418.2,
+        "gst_rate": 5
+      },
+      {
+        "sku": "TUR-KG",
+        "description": "Turmeric powder (kg)",
+        "qty": 45,
+        "unit_price": 312.4,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0068",
+    "vendor_id": "V12",
+    "date": "2026-08-30",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "description": "Fastener kit M8-M16 assorted",
+        "qty": 43,
+        "unit_price": 845.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "WR-E6013",
+        "description": "Welding rods E6013 3.15 mm (pkt)",
+        "qty": 21,
+        "unit_price": 1265.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GLV-NIT",
+        "description": "Nitrile safety gloves (pair)",
+        "qty": 317,
+        "unit_price": 96.35,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0069",
+    "vendor_id": "V16",
+    "date": "2026-09-02",
+    "lines": [
+      {
+        "sku": "PPC-50",
+        "description": "PPC cement (50 kg bag)",
+        "qty": 228,
+        "unit_price": 362.25,
+        "gst_rate": 18
+      },
+      {
+        "sku": "OPC-53",
+        "description": "OPC 53 grade cement (50 kg bag)",
+        "qty": 218,
+        "unit_price": 385.5,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0070",
+    "vendor_id": "V17",
+    "date": "2026-09-01",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 57,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0071",
+    "vendor_id": "V07",
+    "date": "2026-09-04",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "description": "Poly-cotton 65/35 (m)",
+        "qty": 866,
+        "unit_price": 138.6,
+        "gst_rate": 5
+      },
+      {
+        "sku": "DRILL-CT",
+        "description": "Cotton drill fabric 2/1 (m)",
+        "qty": 1374,
+        "unit_price": 164.25,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CANVAS-12",
+        "description": "Canvas 12 oz (m)",
+        "qty": 811,
+        "unit_price": 212.8,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0072",
+    "vendor_id": "V15",
+    "date": "2026-09-03",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1239,
+        "unit_price": 132.45,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0073",
+    "vendor_id": "V18",
+    "date": "2026-09-07",
+    "lines": [
+      {
+        "sku": "GRN-KG",
+        "description": "Green tea leaf (kg)",
+        "qty": 45,
+        "unit_price": 512.75,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0074",
+    "vendor_id": "V04",
+    "date": "2026-09-01",
+    "lines": [
+      {
+        "sku": "DX40-L",
+        "description": "Degreasing agent DX-40 (L)",
+        "qty": 273,
+        "unit_price": 188.9,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0075",
+    "vendor_id": "V03",
+    "date": "2026-09-07",
+    "lines": [
+      {
+        "sku": "CU-4SQ",
+        "description": "Copper cable 4 sq mm FRLS (m)",
+        "qty": 967,
+        "unit_price": 58.2,
+        "gst_rate": 18
+      },
+      {
+        "sku": "LED-40",
+        "description": "LED panel 40W 2x2 ft",
+        "qty": 72,
+        "unit_price": 1349.0,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0076",
+    "vendor_id": "V06",
+    "date": "2026-09-11",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "description": "Blue masterbatch (kg)",
+        "qty": 44,
+        "unit_price": 245.3,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0077",
+    "vendor_id": "V01",
+    "date": "2026-09-08",
+    "lines": [
+      {
+        "sku": "MS-PLT-10",
+        "description": "MS Plate 10 mm (kg)",
+        "qty": 739,
+        "unit_price": 72.1,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TMT-12",
+        "description": "TMT Bar Fe500 12 mm (kg)",
+        "qty": 1125,
+        "unit_price": 61.85,
+        "gst_rate": 18
+      },
+      {
+        "sku": "MS-ANG-50",
+        "description": "MS Angle 50x50x5 mm (kg)",
+        "qty": 523,
+        "unit_price": 68.45,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0078",
+    "vendor_id": "V08",
+    "date": "2026-09-09",
+    "lines": [
+      {
+        "sku": "SH-EN8-40",
+        "description": "Shaft EN8 40 mm x 1 m",
+        "qty": 26,
+        "unit_price": 2210.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 15,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GC-4",
+        "description": "Gear coupling size 4",
+        "qty": 9,
+        "unit_price": 4375.0,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0079",
+    "vendor_id": "V13",
+    "date": "2026-09-12",
+    "lines": [
+      {
+        "sku": "KRAFT-120",
+        "description": "Kraft paper 120 gsm (kg)",
+        "qty": 2845,
+        "unit_price": 48.65,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0080",
+    "vendor_id": "V02",
+    "date": "2026-09-09",
+    "lines": [
+      {
+        "sku": "FILM-23",
+        "description": "Stretch film roll 23 micron",
+        "qty": 14,
+        "unit_price": 1185.55,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0081",
+    "vendor_id": "V05",
+    "date": "2026-09-07",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 77,
+        "unit_price": 289.55,
+        "gst_rate": 12
+      },
+      {
+        "sku": "TONER-88",
+        "description": "Toner cartridge 88A compatible",
+        "qty": 8,
+        "unit_price": 2450.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "STAT-KIT",
+        "description": "Stationery kit (pens, files, pads)",
+        "qty": 27,
+        "unit_price": 364.75,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0082",
+    "vendor_id": "V11",
+    "date": "2026-09-13",
+    "lines": [
+      {
+        "sku": "O2-7M3",
+        "description": "Oxygen cylinder refill 7 m3",
+        "qty": 141,
+        "unit_price": 385.65,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0083",
+    "vendor_id": "V08",
+    "date": "2026-09-07",
+    "lines": [
+      {
+        "sku": "GC-4",
+        "description": "Gear coupling size 4",
+        "qty": 16,
+        "unit_price": 4375.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SH-EN8-40",
+        "description": "Shaft EN8 40 mm x 1 m",
+        "qty": 13,
+        "unit_price": 2210.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 42,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0084",
+    "vendor_id": "V10",
+    "date": "2026-09-14",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "description": "Black pepper whole (kg)",
+        "qty": 33,
+        "unit_price": 684.5,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CARD-KG",
+        "description": "Cardamom 7 mm (kg)",
+        "qty": 7,
+        "unit_price": 2418.2,
+        "gst_rate": 5
+      },
+      {
+        "sku": "TUR-KG",
+        "description": "Turmeric powder (kg)",
+        "qty": 58,
+        "unit_price": 312.4,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0085",
+    "vendor_id": "V16",
+    "date": "2026-09-12",
+    "lines": [
+      {
+        "sku": "OPC-53",
+        "description": "OPC 53 grade cement (50 kg bag)",
+        "qty": 400,
+        "unit_price": 385.5,
+        "gst_rate": 18
+      },
+      {
+        "sku": "PPC-50",
+        "description": "PPC cement (50 kg bag)",
+        "qty": 586,
+        "unit_price": 362.25,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0086",
+    "vendor_id": "V04",
+    "date": "2026-09-12",
+    "lines": [
+      {
+        "sku": "DX40-L",
+        "description": "Degreasing agent DX-40 (L)",
+        "qty": 60,
+        "unit_price": 188.9,
+        "gst_rate": 12
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0087",
+    "vendor_id": "V07",
+    "date": "2026-09-08",
+    "lines": [
+      {
+        "sku": "CANVAS-12",
+        "description": "Canvas 12 oz (m)",
+        "qty": 484,
+        "unit_price": 212.8,
+        "gst_rate": 5
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0088",
+    "vendor_id": "V15",
+    "date": "2026-09-11",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1182,
+        "unit_price": 132.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SG-500",
+        "description": "SG iron casting 500/7 (kg)",
+        "qty": 957,
+        "unit_price": 158.9,
+        "gst_rate": 18
+      }
+    ]
+  },
+  {
+    "po_number": "PO-2026-0089",
+    "vendor_id": "V18",
+    "date": "2026-09-08",
+    "lines": [
+      {
+        "sku": "GRN-KG",
+        "description": "Green tea leaf (kg)",
+        "qty": 39,
+        "unit_price": 512.75,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CTC-KG",
+        "description": "Assam CTC tea BOP (kg)",
+        "qty": 72,
+        "unit_price": 286.4,
+        "gst_rate": 5
+      }
+    ]
+  }
+]

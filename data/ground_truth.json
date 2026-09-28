@@ -1,0 +1,381 @@
+{
+  "INV-0001": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Deccan Steel Traders as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0002": {
+    "expected_action": "approve",
+    "clerk_note": "Lakshmi Hardware Mart rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0003": {
+    "expected_action": "approve",
+    "clerk_note": "Swift Courier Services is a recurring monthly service billed without a PO; confirmed with facilities. Approve.",
+    "scenario": "quirk:NO_PO"
+  },
+  "INV-0004": {
+    "expected_action": "approve",
+    "clerk_note": "Godavari Polymers Pvt Ltd contract allows commodity price escalation up to 3%. Variance within clause, approve.",
+    "scenario": "quirk:PRICE_ESCALATION"
+  },
+  "INV-0005": {
+    "expected_action": "approve",
+    "clerk_note": "Charminar Printing Press rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0006": {
+    "expected_action": "approve",
+    "clerk_note": "Bharat Electricals & Cables ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0007": {
+    "expected_action": "approve",
+    "clerk_note": "Nizam IT Solutions is a recurring monthly service billed without a PO; confirmed with facilities. Approve.",
+    "scenario": "quirk:NO_PO"
+  },
+  "INV-0008": {
+    "expected_action": "approve",
+    "clerk_note": "Narmada Industrial Gases contract allows commodity price escalation up to 3%. Variance within clause, approve.",
+    "scenario": "quirk:PRICE_ESCALATION"
+  },
+  "INV-0009": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Coromandel Engineering Works as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0010": {
+    "expected_action": "approve",
+    "clerk_note": "Annapurna Office Supplies rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0011": {
+    "expected_action": "approve",
+    "clerk_note": "Vindhya Cement Agencies bills 28% GST instead of 18% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0012": {
+    "expected_action": "approve",
+    "clerk_note": "Sri Venkateswara Packaging Pvt Ltd rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0013": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0014": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0015": {
+    "expected_action": "approve",
+    "clerk_note": "Ganga Paper Mills ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0016": {
+    "expected_action": "approve",
+    "clerk_note": "Malabar Spices & Foods bills 12% GST instead of 5% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0017": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Deccan Steel Traders as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0018": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0019": {
+    "expected_action": "approve",
+    "clerk_note": "Rajputana Textiles ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0020": {
+    "expected_action": "approve",
+    "clerk_note": "Swift Courier Services is a recurring monthly service billed without a PO; confirmed with facilities. Approve.",
+    "scenario": "quirk:NO_PO"
+  },
+  "INV-0021": {
+    "expected_action": "approve",
+    "clerk_note": "Lakshmi Hardware Mart rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0022": {
+    "expected_action": "approve",
+    "clerk_note": "Brahmaputra Tea Traders ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0023": {
+    "expected_action": "approve",
+    "clerk_note": "Kaveri Chemicals Ltd bills 18% GST instead of 12% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0024": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Konark Castings as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0025": {
+    "expected_action": "approve",
+    "clerk_note": "Charminar Printing Press rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0026": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0027": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0028": {
+    "expected_action": "approve",
+    "clerk_note": "Godavari Polymers Pvt Ltd contract allows commodity price escalation up to 3%. Variance within clause, approve.",
+    "scenario": "quirk:PRICE_ESCALATION"
+  },
+  "INV-0029": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Coromandel Engineering Works as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0030": {
+    "expected_action": "approve",
+    "clerk_note": "Nizam IT Solutions is a recurring monthly service billed without a PO; confirmed with facilities. Approve.",
+    "scenario": "quirk:NO_PO"
+  },
+  "INV-0031": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0032": {
+    "expected_action": "approve",
+    "clerk_note": "Bharat Electricals & Cables ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0033": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0034": {
+    "expected_action": "approve",
+    "clerk_note": "Sri Venkateswara Packaging Pvt Ltd rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0035": {
+    "expected_action": "approve",
+    "clerk_note": "Narmada Industrial Gases rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0036": {
+    "expected_action": "approve",
+    "clerk_note": "Ganga Paper Mills ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0037": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Deccan Steel Traders as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0038": {
+    "expected_action": "approve",
+    "clerk_note": "Annapurna Office Supplies rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0039": {
+    "expected_action": "approve",
+    "clerk_note": "Malabar Spices & Foods bills 12% GST instead of 5% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0040": {
+    "expected_action": "approve",
+    "clerk_note": "Lakshmi Hardware Mart rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0041": {
+    "expected_action": "approve",
+    "clerk_note": "Vindhya Cement Agencies bills 28% GST instead of 18% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0042": {
+    "expected_action": "approve",
+    "clerk_note": "Charminar Printing Press rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0043": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Rajputana Textiles as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0044": {
+    "expected_action": "approve",
+    "clerk_note": "Konark Castings contract allows commodity price escalation up to 3%. Variance within clause, approve.",
+    "scenario": "quirk:PRICE_ESCALATION"
+  },
+  "INV-0045": {
+    "expected_action": "approve",
+    "clerk_note": "Brahmaputra Tea Traders ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0046": {
+    "expected_action": "approve",
+    "clerk_note": "Kaveri Chemicals Ltd bills 18% GST instead of 12% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0047": {
+    "expected_action": "approve",
+    "clerk_note": "Swift Courier Services is a recurring monthly service billed without a PO; confirmed with facilities. Approve.",
+    "scenario": "quirk:NO_PO"
+  },
+  "INV-0048": {
+    "expected_action": "approve",
+    "clerk_note": "Bharat Electricals & Cables ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0049": {
+    "expected_action": "approve",
+    "clerk_note": "Godavari Polymers Pvt Ltd contract allows commodity price escalation up to 3%. Variance within clause, approve.",
+    "scenario": "quirk:PRICE_ESCALATION"
+  },
+  "INV-0050": {
+    "expected_action": "approve",
+    "clerk_note": "Nizam IT Solutions is a recurring monthly service billed without a PO; confirmed with facilities. Approve.",
+    "scenario": "quirk:NO_PO"
+  },
+  "INV-0051": {
+    "expected_action": "approve",
+    "clerk_note": "Clean three-way match.",
+    "scenario": "clean"
+  },
+  "INV-0052": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Coromandel Engineering Works as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:FREIGHT_SMALL"
+  },
+  "INV-0053": {
+    "expected_action": "hold",
+    "clerk_note": "Same PO and amount as LHM/26-27/0099 which we already processed; only a suffix was added to the number. Hold as duplicate and contact vendor.",
+    "scenario": "anomaly_duplicate"
+  },
+  "INV-0054": {
+    "expected_action": "approve",
+    "clerk_note": "Ganga Paper Mills ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "INV-0055": {
+    "expected_action": "approve",
+    "clerk_note": "Sri Venkateswara Packaging Pvt Ltd rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0056": {
+    "expected_action": "approve",
+    "clerk_note": "Annapurna Office Supplies rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:ROUNDING"
+  },
+  "INV-0057": {
+    "expected_action": "approve",
+    "clerk_note": "Narmada Industrial Gases contract allows commodity price escalation up to 3%. Variance within clause, approve. Narmada Industrial Gases rounds totals to the nearest rupee. Difference is under INR 1, approve.",
+    "scenario": "quirk:PRICE_ESCALATION+ROUNDING"
+  },
+  "INV-0058": {
+    "expected_action": "hold",
+    "clerk_note": "Freight at 9.6% of goods value is far above Coromandel Engineering Works's usual ~1.5%. Hold and ask the vendor to justify the freight charge.",
+    "scenario": "anomaly_freight_spike"
+  },
+  "INV-0059": {
+    "expected_action": "approve",
+    "clerk_note": "Malabar Spices & Foods bills 12% GST instead of 5% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0060": {
+    "expected_action": "approve",
+    "clerk_note": "Vindhya Cement Agencies bills 28% GST instead of 18% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0061": {
+    "expected_action": "approve",
+    "clerk_note": "Kaveri Chemicals Ltd bills 18% GST instead of 12% on this item and issues a credit note every month. Approve, credit note expected.",
+    "scenario": "quirk:GST_RATE"
+  },
+  "INV-0062": {
+    "expected_action": "approve",
+    "clerk_note": "Rajputana Textiles ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity. Freight billed separately is agreed with Rajputana Textiles as long as it stays under 2% of goods value. Approve, code freight to 5120.",
+    "scenario": "quirk:SPLIT_SHIPMENT+FREIGHT_SMALL"
+  },
+  "INV-0063": {
+    "expected_action": "approve",
+    "clerk_note": "Freight billed separately is agreed with Konark Castings as long as it stays under 2% of goods value. Approve, code freight to 5120. Konark Castings contract allows commodity price escalation up to 3%. Variance within clause, approve.",
+    "scenario": "quirk:FREIGHT_SMALL+PRICE_ESCALATION"
+  },
+  "INV-0064": {
+    "expected_action": "approve",
+    "clerk_note": "Brahmaputra Tea Traders ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity.",
+    "scenario": "quirk:SPLIT_SHIPMENT"
+  },
+  "_vendor_quirks": {
+    "V01": [
+      "Bills freight as a separate line, always under 2% of goods value."
+    ],
+    "V02": [
+      "Rounds invoice totals to the nearest rupee without a round-off line."
+    ],
+    "V03": [
+      "Ships in partial lots but invoices the full PO quantity up front."
+    ],
+    "V04": [
+      "Charges the wrong GST rate on this item; issues a monthly credit note."
+    ],
+    "V05": [
+      "Rounds invoice totals to the nearest rupee without a round-off line."
+    ],
+    "V06": [
+      "Contract has a commodity price escalation clause of up to 3%."
+    ],
+    "V07": [
+      "Ships in partial lots but invoices the full PO quantity up front.",
+      "Bills freight as a separate line, always under 2% of goods value."
+    ],
+    "V08": [
+      "Bills freight as a separate line, always under 2% of goods value."
+    ],
+    "V09": [
+      "Recurring monthly service billed without a purchase order."
+    ],
+    "V10": [
+      "Charges the wrong GST rate on this item; issues a monthly credit note."
+    ],
+    "V11": [
+      "Contract has a commodity price escalation clause of up to 3%.",
+      "Rounds invoice totals to the nearest rupee without a round-off line."
+    ],
+    "V12": [
+      "Rounds invoice totals to the nearest rupee without a round-off line."
+    ],
+    "V13": [
+      "Ships in partial lots but invoices the full PO quantity up front."
+    ],
+    "V14": [
+      "Recurring monthly service billed without a purchase order."
+    ],
+    "V15": [
+      "Bills freight as a separate line, always under 2% of goods value.",
+      "Contract has a commodity price escalation clause of up to 3%."
+    ],
+    "V16": [
+      "Charges the wrong GST rate on this item; issues a monthly credit note."
+    ],
+    "V17": [
+      "Rounds invoice totals to the nearest rupee without a round-off line."
+    ],
+    "V18": [
+      "Ships in partial lots but invoices the full PO quantity up front."
+    ]
+  }
+}

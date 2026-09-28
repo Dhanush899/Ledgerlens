@@ -1,0 +1,164 @@
+[
+  {
+    "id": "V01",
+    "name": "Deccan Steel Traders",
+    "gstin": "36AUGCD9928P1ZN",
+    "state_code": "36",
+    "city": "Hyderabad",
+    "payment_terms": "Net 30",
+    "category": "Raw material"
+  },
+  {
+    "id": "V02",
+    "name": "Sri Venkateswara Packaging Pvt Ltd",
+    "gstin": "37HRVCS5557A1ZS",
+    "state_code": "37",
+    "city": "Vijayawada",
+    "payment_terms": "Net 45",
+    "category": "Packaging"
+  },
+  {
+    "id": "V03",
+    "name": "Bharat Electricals & Cables",
+    "gstin": "27FZPCB6574J1ZG",
+    "state_code": "27",
+    "city": "Pune",
+    "payment_terms": "Net 30",
+    "category": "Electrical"
+  },
+  {
+    "id": "V04",
+    "name": "Kaveri Chemicals Ltd",
+    "gstin": "29EGLCK2674C1ZX",
+    "state_code": "29",
+    "city": "Bengaluru",
+    "payment_terms": "Net 60",
+    "category": "Chemicals"
+  },
+  {
+    "id": "V05",
+    "name": "Annapurna Office Supplies",
+    "gstin": "36NDMCA6635X1Z0",
+    "state_code": "36",
+    "city": "Secunderabad",
+    "payment_terms": "Net 15",
+    "category": "Office supplies"
+  },
+  {
+    "id": "V06",
+    "name": "Godavari Polymers Pvt Ltd",
+    "gstin": "37JBRCG9785D1ZJ",
+    "state_code": "37",
+    "city": "Rajahmundry",
+    "payment_terms": "Net 45",
+    "category": "Raw material"
+  },
+  {
+    "id": "V07",
+    "name": "Rajputana Textiles",
+    "gstin": "08NCUCR5803Y1ZI",
+    "state_code": "08",
+    "city": "Bhilwara",
+    "payment_terms": "Net 30",
+    "category": "Textiles"
+  },
+  {
+    "id": "V08",
+    "name": "Coromandel Engineering Works",
+    "gstin": "33WMVCC4150C1ZK",
+    "state_code": "33",
+    "city": "Chennai",
+    "payment_terms": "Net 30",
+    "category": "Machined parts"
+  },
+  {
+    "id": "V09",
+    "name": "Swift Courier Services",
+    "gstin": "36BYHCS5741C1Z2",
+    "state_code": "36",
+    "city": "Hyderabad",
+    "payment_terms": "Net 7",
+    "category": "Services"
+  },
+  {
+    "id": "V10",
+    "name": "Malabar Spices & Foods",
+    "gstin": "32HDNCM5554R1ZD",
+    "state_code": "32",
+    "city": "Kochi",
+    "payment_terms": "Net 30",
+    "category": "Canteen"
+  },
+  {
+    "id": "V11",
+    "name": "Narmada Industrial Gases",
+    "gstin": "24XMFCN7065M1ZQ",
+    "state_code": "24",
+    "city": "Vadodara",
+    "payment_terms": "Net 30",
+    "category": "Consumables"
+  },
+  {
+    "id": "V12",
+    "name": "Lakshmi Hardware Mart",
+    "gstin": "36GYJCL2169X1ZV",
+    "state_code": "36",
+    "city": "Hyderabad",
+    "payment_terms": "Net 15",
+    "category": "Hardware"
+  },
+  {
+    "id": "V13",
+    "name": "Ganga Paper Mills",
+    "gstin": "09XFUCG5010F1ZN",
+    "state_code": "09",
+    "city": "Kanpur",
+    "payment_terms": "Net 45",
+    "category": "Packaging"
+  },
+  {
+    "id": "V14",
+    "name": "Nizam IT Solutions",
+    "gstin": "36RNJCN4598Z1ZN",
+    "state_code": "36",
+    "city": "Hyderabad",
+    "payment_terms": "Net 30",
+    "category": "Services"
+  },
+  {
+    "id": "V15",
+    "name": "Konark Castings",
+    "gstin": "21LBHCK1525L1ZD",
+    "state_code": "21",
+    "city": "Cuttack",
+    "payment_terms": "Net 60",
+    "category": "Raw material"
+  },
+  {
+    "id": "V16",
+    "name": "Vindhya Cement Agencies",
+    "gstin": "23NJCCV4456W1ZM",
+    "state_code": "23",
+    "city": "Satna",
+    "payment_terms": "Net 30",
+    "category": "Civil"
+  },
+  {
+    "id": "V17",
+    "name": "Charminar Printing Press",
+    "gstin": "36ZLGCC9179N1ZI",
+    "state_code": "36",
+    "city": "Hyderabad",
+    "payment_terms": "Net 15",
+    "category": "Printing"
+  },
+  {
+    "id": "V18",
+    "name": "Brahmaputra Tea Traders",
+    "gstin": "18XRECB5339E1Z6",
+    "state_code": "18",
+    "city": "Guwahati",
+    "payment_terms": "Net 30",
+    "category": "Canteen"
+  }
+]

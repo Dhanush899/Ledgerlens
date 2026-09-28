@@ -1,0 +1,810 @@
+[
+  {
+    "id": "H-0001",
+    "date": "2026-08-03",
+    "vendor_id": "V03",
+    "invoice_number": "BEC/26-27/0221",
+    "total": 309909.77,
+    "flags": [
+      {
+        "code": "QTY_MISMATCH",
+        "severity": "medium",
+        "message": "Copper cable 4 sq mm FRLS (m): invoiced 1722 but only 1036 received (60.2%).",
+        "details": {
+          "sku": "CU-4SQ",
+          "invoiced_qty": 1722,
+          "received_qty": 1036,
+          "po_qty": 1722,
+          "received_pct": 60.2
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Bharat Electricals & Cables ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity."
+  },
+  {
+    "id": "H-0002",
+    "date": "2026-08-04",
+    "vendor_id": "V04",
+    "invoice_number": "KCL/26-27/0207",
+    "total": 52827.77,
+    "flags": [
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "Degreasing agent DX-40 (L): GST charged 18% but PO says 12%.",
+        "details": {
+          "sku": "DX40-L",
+          "po_gst_rate": 12,
+          "invoice_gst_rate": 18,
+          "excess_tax": 2686.16
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Kaveri Chemicals Ltd bills 18% GST instead of 12% on this item and issues a credit note every month. Approve, credit note expected."
+  },
+  {
+    "id": "H-0003",
+    "date": "2026-08-04",
+    "vendor_id": "V11",
+    "invoice_number": "NIG/26-27/0298",
+    "total": 141414.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 141,414.00 differs from line sum INR 141,414.27 by INR -0.27.",
+        "details": {
+          "stated_total": 141414.0,
+          "computed_total": 141414.27,
+          "difference": -0.27
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Narmada Industrial Gases rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0004",
+    "date": "2026-08-04",
+    "vendor_id": "V13",
+    "invoice_number": "GPM/26-27/0096",
+    "total": 130341.57,
+    "flags": [
+      {
+        "code": "QTY_MISMATCH",
+        "severity": "medium",
+        "message": "Duplex board 300 gsm (kg): invoiced 1868 but only 1184 received (63.4%).",
+        "details": {
+          "sku": "DUPLEX-300",
+          "invoiced_qty": 1868,
+          "received_qty": 1184,
+          "po_qty": 1868,
+          "received_pct": 63.4
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Ganga Paper Mills ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity."
+  },
+  {
+    "id": "H-0005",
+    "date": "2026-08-04",
+    "vendor_id": "V17",
+    "invoice_number": "CPP/26-27/0339",
+    "total": 11130.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 11,130.00 differs from line sum INR 11,129.64 by INR +0.36.",
+        "details": {
+          "stated_total": 11130.0,
+          "computed_total": 11129.64,
+          "difference": 0.36
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Charminar Printing Press rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0006",
+    "date": "2026-08-05",
+    "vendor_id": "V12",
+    "invoice_number": "LHM/26-27/0098",
+    "total": 110975.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 110,975.00 differs from line sum INR 110,974.68 by INR +0.32.",
+        "details": {
+          "stated_total": 110975.0,
+          "computed_total": 110974.68,
+          "difference": 0.32
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Lakshmi Hardware Mart rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0007",
+    "date": "2026-08-05",
+    "vendor_id": "V14",
+    "invoice_number": "NIT/26-27/0129",
+    "total": 11505.0,
+    "flags": [
+      {
+        "code": "MISSING_PO",
+        "severity": "medium",
+        "message": "Invoice does not reference a valid purchase order.",
+        "details": {
+          "po_number": null,
+          "amount": 11505.0
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Nizam IT Solutions is a recurring monthly service billed without a PO; confirmed with facilities. Approve."
+  },
+  {
+    "id": "H-0008",
+    "date": "2026-08-07",
+    "vendor_id": "V18",
+    "invoice_number": "BTT/26-27/0390",
+    "total": 116504.85,
+    "flags": [
+      {
+        "code": "QTY_MISMATCH",
+        "severity": "medium",
+        "message": "Assam CTC tea BOP (kg): invoiced 280 but only 190 received (67.9%).",
+        "details": {
+          "sku": "CTC-KG",
+          "invoiced_qty": 280,
+          "received_qty": 190,
+          "po_qty": 280,
+          "received_pct": 67.9
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Brahmaputra Tea Traders ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity."
+  },
+  {
+    "id": "H-0009",
+    "date": "2026-08-09",
+    "vendor_id": "V03",
+    "invoice_number": "BEC/26-27/0222",
+    "total": 85993.21,
+    "flags": [
+      {
+        "code": "QTY_MISMATCH",
+        "severity": "medium",
+        "message": "MCB 32A double pole: invoiced 119 but only 74 received (62.2%).",
+        "details": {
+          "sku": "MCB-32DP",
+          "invoiced_qty": 119,
+          "received_qty": 74,
+          "po_qty": 119,
+          "received_pct": 62.2
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Bharat Electricals & Cables ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity."
+  },
+  {
+    "id": "H-0010",
+    "date": "2026-08-09",
+    "vendor_id": "V10",
+    "invoice_number": "MSF/26-27/0384",
+    "total": 31645.38,
+    "flags": [
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "Turmeric powder (kg): GST charged 12% but PO says 5%.",
+        "details": {
+          "sku": "TUR-KG",
+          "po_gst_rate": 5,
+          "invoice_gst_rate": 12,
+          "excess_tax": 962.19
+        }
+      },
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "Cardamom 7 mm (kg): GST charged 12% but PO says 5%.",
+        "details": {
+          "sku": "CARD-KG",
+          "po_gst_rate": 5,
+          "invoice_gst_rate": 12,
+          "excess_tax": 1015.64
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Malabar Spices & Foods bills 12% GST instead of 5% on this item and issues a credit note every month. Approve, credit note expected."
+  },
+  {
+    "id": "H-0011",
+    "date": "2026-08-10",
+    "vendor_id": "V01",
+    "invoice_number": "DST/26-27/0138",
+    "total": 226671.23,
+    "flags": [
+      {
+        "code": "UNEXPECTED_LINE",
+        "severity": "medium",
+        "message": "Line 'Freight & forwarding charges' (INR 2,829.16, 1.49% of goods value) is not on the PO.",
+        "details": {
+          "sku": "FREIGHT",
+          "description": "Freight & forwarding charges",
+          "amount": 2829.16,
+          "pct_of_goods": 1.49
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Freight billed separately is agreed with Deccan Steel Traders as long as it stays under 2% of goods value. Approve, code freight to 5120."
+  },
+  {
+    "id": "H-0012",
+    "date": "2026-08-10",
+    "vendor_id": "V06",
+    "invoice_number": "GPP/26-27/0153",
+    "total": 203158.24,
+    "flags": [
+      {
+        "code": "PRICE_VARIANCE",
+        "severity": "medium",
+        "message": "Blue masterbatch (kg): unit price INR 248.07 vs PO INR 245.30 (+1.13%).",
+        "details": {
+          "sku": "MB-BLUE",
+          "po_price": 245.3,
+          "invoice_price": 248.07,
+          "variance_pct": 1.13,
+          "variance_amount": 387.8
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Godavari Polymers Pvt Ltd contract allows commodity price escalation up to 3%. Variance within clause, approve."
+  },
+  {
+    "id": "H-0013",
+    "date": "2026-08-10",
+    "vendor_id": "V07",
+    "invoice_number": "RJT/26-27/0133",
+    "total": 258129.06,
+    "flags": [
+      {
+        "code": "QTY_MISMATCH",
+        "severity": "medium",
+        "message": "Canvas 12 oz (m): invoiced 784 but only 430 received (54.8%).",
+        "details": {
+          "sku": "CANVAS-12",
+          "invoiced_qty": 784,
+          "received_qty": 430,
+          "po_qty": 784,
+          "received_pct": 54.8
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Rajputana Textiles ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity."
+  },
+  {
+    "id": "H-0014",
+    "date": "2026-08-10",
+    "vendor_id": "V15",
+    "invoice_number": "KNC/26-27/0192",
+    "total": 454555.13,
+    "flags": [
+      {
+        "code": "UNEXPECTED_LINE",
+        "severity": "medium",
+        "message": "Line 'Freight & forwarding charges' (INR 7,134.71, 1.89% of goods value) is not on the PO.",
+        "details": {
+          "sku": "FREIGHT",
+          "description": "Freight & forwarding charges",
+          "amount": 7134.71,
+          "pct_of_goods": 1.89
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Freight billed separately is agreed with Konark Castings as long as it stays under 2% of goods value. Approve, code freight to 5120."
+  },
+  {
+    "id": "H-0015",
+    "date": "2026-08-13",
+    "vendor_id": "V13",
+    "invoice_number": "GPM/26-27/0097",
+    "total": 141505.73,
+    "flags": [
+      {
+        "code": "QTY_MISMATCH",
+        "severity": "medium",
+        "message": "Duplex board 300 gsm (kg): invoiced 2028 but only 1142 received (56.3%).",
+        "details": {
+          "sku": "DUPLEX-300",
+          "invoiced_qty": 2028,
+          "received_qty": 1142,
+          "po_qty": 2028,
+          "received_pct": 56.3
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Ganga Paper Mills ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity."
+  },
+  {
+    "id": "H-0016",
+    "date": "2026-08-13",
+    "vendor_id": "V17",
+    "invoice_number": "CPP/26-27/0340",
+    "total": 59741.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 59,741.00 differs from line sum INR 59,740.63 by INR +0.37.",
+        "details": {
+          "stated_total": 59741.0,
+          "computed_total": 59740.63,
+          "difference": 0.37
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Charminar Printing Press rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0017",
+    "date": "2026-08-15",
+    "vendor_id": "V02",
+    "invoice_number": "SVP/26-27/0093",
+    "total": 49015.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 49,015.00 differs from line sum INR 49,014.84 by INR +0.16.",
+        "details": {
+          "stated_total": 49015.0,
+          "computed_total": 49014.84,
+          "difference": 0.16
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Sri Venkateswara Packaging Pvt Ltd rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0018",
+    "date": "2026-08-16",
+    "vendor_id": "V09",
+    "invoice_number": "SCS/26-27/0125",
+    "total": 6534.84,
+    "flags": [
+      {
+        "code": "MISSING_PO",
+        "severity": "medium",
+        "message": "Invoice does not reference a valid purchase order.",
+        "details": {
+          "po_number": null,
+          "amount": 6534.84
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Swift Courier Services is a recurring monthly service billed without a PO; confirmed with facilities. Approve."
+  },
+  {
+    "id": "H-0019",
+    "date": "2026-08-17",
+    "vendor_id": "V09",
+    "invoice_number": "SCS/26-27/0126",
+    "total": 17025.98,
+    "flags": [
+      {
+        "code": "MISSING_PO",
+        "severity": "medium",
+        "message": "Invoice does not reference a valid purchase order.",
+        "details": {
+          "po_number": null,
+          "amount": 17025.98
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Swift Courier Services is a recurring monthly service billed without a PO; confirmed with facilities. Approve."
+  },
+  {
+    "id": "H-0020",
+    "date": "2026-08-18",
+    "vendor_id": "V04",
+    "invoice_number": "KCL/26-27/0206",
+    "total": 37355.5,
+    "flags": [
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "Isopropyl alcohol industrial grade (L): GST charged 18% but PO says 12%.",
+        "details": {
+          "sku": "IPA-L",
+          "po_gst_rate": 12,
+          "invoice_gst_rate": 18,
+          "excess_tax": 1899.43
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Kaveri Chemicals Ltd bills 18% GST instead of 12% on this item and issues a credit note every month. Approve, credit note expected."
+  },
+  {
+    "id": "H-0021",
+    "date": "2026-08-18",
+    "vendor_id": "V05",
+    "invoice_number": "AOS/26-27/0195",
+    "total": 22385.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 22,385.00 differs from line sum INR 22,385.36 by INR -0.36.",
+        "details": {
+          "stated_total": 22385.0,
+          "computed_total": 22385.36,
+          "difference": -0.36
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Annapurna Office Supplies rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0022",
+    "date": "2026-08-18",
+    "vendor_id": "V05",
+    "invoice_number": "AOS/26-27/0196",
+    "total": 75678.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 75,678.00 differs from line sum INR 75,677.56 by INR +0.44.",
+        "details": {
+          "stated_total": 75678.0,
+          "computed_total": 75677.56,
+          "difference": 0.44
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Annapurna Office Supplies rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0023",
+    "date": "2026-08-18",
+    "vendor_id": "V07",
+    "invoice_number": "RJT/26-27/0134",
+    "total": 352173.36,
+    "flags": [
+      {
+        "code": "UNEXPECTED_LINE",
+        "severity": "medium",
+        "message": "Line 'Freight & forwarding charges' (INR 4,716.77, 1.43% of goods value) is not on the PO.",
+        "details": {
+          "sku": "FREIGHT",
+          "description": "Freight & forwarding charges",
+          "amount": 4716.77,
+          "pct_of_goods": 1.43
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Freight billed separately is agreed with Rajputana Textiles as long as it stays under 2% of goods value. Approve, code freight to 5120."
+  },
+  {
+    "id": "H-0024",
+    "date": "2026-08-19",
+    "vendor_id": "V12",
+    "invoice_number": "LHM/26-27/0097",
+    "total": 20948.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 20,948.00 differs from line sum INR 20,947.77 by INR +0.23.",
+        "details": {
+          "stated_total": 20948.0,
+          "computed_total": 20947.77,
+          "difference": 0.23
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Lakshmi Hardware Mart rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0025",
+    "date": "2026-08-24",
+    "vendor_id": "V02",
+    "invoice_number": "SVP/26-27/0094",
+    "total": 127803.0,
+    "flags": [
+      {
+        "code": "TOTAL_MISMATCH",
+        "severity": "low",
+        "message": "Stated total INR 127,803.00 differs from line sum INR 127,802.85 by INR +0.15.",
+        "details": {
+          "stated_total": 127803.0,
+          "computed_total": 127802.85,
+          "difference": 0.15
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Sri Venkateswara Packaging Pvt Ltd rounds totals to the nearest rupee. Difference is under INR 1, approve."
+  },
+  {
+    "id": "H-0026",
+    "date": "2026-08-24",
+    "vendor_id": "V06",
+    "invoice_number": "GPP/26-27/0152",
+    "total": 302973.61,
+    "flags": [
+      {
+        "code": "PRICE_VARIANCE",
+        "severity": "medium",
+        "message": "PP granules injection grade (kg): unit price INR 112.01 vs PO INR 109.75 (+2.06%).",
+        "details": {
+          "sku": "PP-GR",
+          "po_price": 109.75,
+          "invoice_price": 112.01,
+          "variance_pct": 2.06,
+          "variance_amount": 2169.6
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Godavari Polymers Pvt Ltd contract allows commodity price escalation up to 3%. Variance within clause, approve."
+  },
+  {
+    "id": "H-0027",
+    "date": "2026-08-25",
+    "vendor_id": "V16",
+    "invoice_number": "VCA/26-27/0201",
+    "total": 373556.16,
+    "flags": [
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "OPC 53 grade cement (50 kg bag): GST charged 28% but PO says 18%.",
+        "details": {
+          "sku": "OPC-53",
+          "po_gst_rate": 18,
+          "invoice_gst_rate": 28,
+          "excess_tax": 8789.4
+        }
+      },
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "PPC cement (50 kg bag): GST charged 28% but PO says 18%.",
+        "details": {
+          "sku": "PPC-50",
+          "po_gst_rate": 18,
+          "invoice_gst_rate": 28,
+          "excess_tax": 20394.67
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Vindhya Cement Agencies bills 28% GST instead of 18% on this item and issues a credit note every month. Approve, credit note expected."
+  },
+  {
+    "id": "H-0028",
+    "date": "2026-08-25",
+    "vendor_id": "V18",
+    "invoice_number": "BTT/26-27/0389",
+    "total": 63296.73,
+    "flags": [
+      {
+        "code": "QTY_MISMATCH",
+        "severity": "medium",
+        "message": "Green tea leaf (kg): invoiced 12 but only 7 received (58.3%).",
+        "details": {
+          "sku": "GRN-KG",
+          "invoiced_qty": 12,
+          "received_qty": 7,
+          "po_qty": 12,
+          "received_pct": 58.3
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Brahmaputra Tea Traders ships in partial lots; balance GRN follows within a week. OK to approve against PO quantity."
+  },
+  {
+    "id": "H-0029",
+    "date": "2026-08-26",
+    "vendor_id": "V08",
+    "invoice_number": "CEW/26-27/0360",
+    "total": 45086.69,
+    "flags": [
+      {
+        "code": "UNEXPECTED_LINE",
+        "severity": "medium",
+        "message": "Line 'Freight & forwarding charges' (INR 632.26, 1.68% of goods value) is not on the PO.",
+        "details": {
+          "sku": "FREIGHT",
+          "description": "Freight & forwarding charges",
+          "amount": 632.26,
+          "pct_of_goods": 1.68
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Freight billed separately is agreed with Coromandel Engineering Works as long as it stays under 2% of goods value. Approve, code freight to 5120."
+  },
+  {
+    "id": "H-0030",
+    "date": "2026-08-26",
+    "vendor_id": "V16",
+    "invoice_number": "VCA/26-27/0200",
+    "total": 95981.76,
+    "flags": [
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "PPC cement (50 kg bag): GST charged 28% but PO says 18%.",
+        "details": {
+          "sku": "PPC-50",
+          "po_gst_rate": 18,
+          "invoice_gst_rate": 28,
+          "excess_tax": 7498.57
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Vindhya Cement Agencies bills 28% GST instead of 18% on this item and issues a credit note every month. Approve, credit note expected."
+  },
+  {
+    "id": "H-0031",
+    "date": "2026-08-27",
+    "vendor_id": "V01",
+    "invoice_number": "DST/26-27/0139",
+    "total": 103704.7,
+    "flags": [
+      {
+        "code": "UNEXPECTED_LINE",
+        "severity": "medium",
+        "message": "Line 'Freight & forwarding charges' (INR 1,364.54, 1.58% of goods value) is not on the PO.",
+        "details": {
+          "sku": "FREIGHT",
+          "description": "Freight & forwarding charges",
+          "amount": 1364.54,
+          "pct_of_goods": 1.58
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Freight billed separately is agreed with Deccan Steel Traders as long as it stays under 2% of goods value. Approve, code freight to 5120."
+  },
+  {
+    "id": "H-0032",
+    "date": "2026-08-27",
+    "vendor_id": "V10",
+    "invoice_number": "MSF/26-27/0383",
+    "total": 17494.4,
+    "flags": [
+      {
+        "code": "TAX_MISMATCH",
+        "severity": "medium",
+        "message": "Turmeric powder (kg): GST charged 12% but PO says 5%.",
+        "details": {
+          "sku": "TUR-KG",
+          "po_gst_rate": 5,
+          "invoice_gst_rate": 12,
+          "excess_tax": 1093.4
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Malabar Spices & Foods bills 12% GST instead of 5% on this item and issues a credit note every month. Approve, credit note expected."
+  },
+  {
+    "id": "H-0033",
+    "date": "2026-08-27",
+    "vendor_id": "V14",
+    "invoice_number": "NIT/26-27/0128",
+    "total": 21830.0,
+    "flags": [
+      {
+        "code": "MISSING_PO",
+        "severity": "medium",
+        "message": "Invoice does not reference a valid purchase order.",
+        "details": {
+          "po_number": null,
+          "amount": 21830.0
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Nizam IT Solutions is a recurring monthly service billed without a PO; confirmed with facilities. Approve."
+  },
+  {
+    "id": "H-0034",
+    "date": "2026-08-28",
+    "vendor_id": "V08",
+    "invoice_number": "CEW/26-27/0361",
+    "total": 97058.21,
+    "flags": [
+      {
+        "code": "UNEXPECTED_LINE",
+        "severity": "medium",
+        "message": "Line 'Freight & forwarding charges' (INR 1,182.72, 1.46% of goods value) is not on the PO.",
+        "details": {
+          "sku": "FREIGHT",
+          "description": "Freight & forwarding charges",
+          "amount": 1182.72,
+          "pct_of_goods": 1.46
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Freight billed separately is agreed with Coromandel Engineering Works as long as it stays under 2% of goods value. Approve, code freight to 5120."
+  },
+  {
+    "id": "H-0035",
+    "date": "2026-08-28",
+    "vendor_id": "V11",
+    "invoice_number": "NIG/26-27/0297",
+    "total": 43935.4,
+    "flags": [
+      {
+        "code": "PRICE_VARIANCE",
+        "severity": "medium",
+        "message": "CO2 cylinder refill 30 kg: unit price INR 620.87 vs PO INR 612.35 (+1.39%).",
+        "details": {
+          "sku": "CO2-30",
+          "po_price": 612.35,
+          "invoice_price": 620.87,
+          "variance_pct": 1.39,
+          "variance_amount": 187.44
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Narmada Industrial Gases contract allows commodity price escalation up to 3%. Variance within clause, approve."
+  },
+  {
+    "id": "H-0036",
+    "date": "2026-08-28",
+    "vendor_id": "V15",
+    "invoice_number": "KNC/26-27/0193",
+    "total": 161787.71,
+    "flags": [
+      {
+        "code": "PRICE_VARIANCE",
+        "severity": "medium",
+        "message": "SG iron casting 500/7 (kg): unit price INR 163.03 vs PO INR 158.90 (+2.60%).",
+        "details": {
+          "sku": "SG-500",
+          "po_price": 158.9,
+          "invoice_price": 163.03,
+          "variance_pct": 2.6,
+          "variance_amount": 3473.33
+        }
+      }
+    ],
+    "decision": "approve",
+    "note": "Konark Castings contract allows commodity price escalation up to 3%. Variance within clause, approve."
+  }
+]

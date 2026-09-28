@@ -1,0 +1,1893 @@
+[
+  {
+    "invoice_number": "DST/26-27/0140",
+    "vendor_id": "V01",
+    "po_number": "PO-2026-0033",
+    "date": "2026-09-01",
+    "due_in": "Net 30",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "MS-ANG-50",
+        "description": "MS Angle 50x50x5 mm (kg)",
+        "qty": 1042,
+        "unit_price": 68.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 1033.58,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 72358.48,
+    "tax": 13024.53,
+    "total": 85383.01,
+    "day": 1,
+    "id": "INV-0001"
+  },
+  {
+    "invoice_number": "LHM/26-27/0099",
+    "vendor_id": "V12",
+    "po_number": "PO-2026-0034",
+    "date": "2026-09-01",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "description": "Fastener kit M8-M16 assorted",
+        "qty": 37,
+        "unit_price": 845.42,
+        "gst_rate": 18
+      },
+      {
+        "sku": "WR-E6013",
+        "description": "Welding rods E6013 3.15 mm (pkt)",
+        "qty": 10,
+        "unit_price": 1265.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GLV-NIT",
+        "description": "Nitrile safety gloves (pair)",
+        "qty": 366,
+        "unit_price": 96.35,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 79199.14,
+    "tax": 12140.0,
+    "total": 91339.0,
+    "day": 1,
+    "id": "INV-0002"
+  },
+  {
+    "invoice_number": "SCS/26-27/0127",
+    "vendor_id": "V09",
+    "po_number": null,
+    "date": "2026-09-02",
+    "due_in": "Net 7",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "CR-EXP",
+        "description": "Express document deliveries",
+        "qty": 115,
+        "unit_price": 142.0,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 16330.0,
+    "tax": 2939.4,
+    "total": 19269.4,
+    "day": 2,
+    "id": "INV-0003"
+  },
+  {
+    "invoice_number": "GPP/26-27/0154",
+    "vendor_id": "V06",
+    "po_number": "PO-2026-0035",
+    "date": "2026-09-03",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "description": "Blue masterbatch (kg)",
+        "qty": 89,
+        "unit_price": 245.3,
+        "gst_rate": 18
+      },
+      {
+        "sku": "PP-GR",
+        "description": "PP granules injection grade (kg)",
+        "qty": 1133,
+        "unit_price": 111.49,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 148149.87,
+    "tax": 26666.98,
+    "total": 174816.85,
+    "day": 3,
+    "id": "INV-0004"
+  },
+  {
+    "invoice_number": "CPP/26-27/0341",
+    "vendor_id": "V17",
+    "po_number": "PO-2026-0036",
+    "date": "2026-09-03",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 53,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BRO-A4",
+        "description": "A4 tri-fold brochure",
+        "qty": 1212,
+        "unit_price": 18.35,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 88259.65,
+    "tax": 15886.74,
+    "total": 104146.0,
+    "day": 3,
+    "id": "INV-0005"
+  },
+  {
+    "invoice_number": "BEC/26-27/0223",
+    "vendor_id": "V03",
+    "po_number": "PO-2026-0037",
+    "date": "2026-09-04",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "LED-40",
+        "description": "LED panel 40W 2x2 ft",
+        "qty": 39,
+        "unit_price": 1349.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "MCB-32DP",
+        "description": "MCB 32A double pole",
+        "qty": 56,
+        "unit_price": 612.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "CU-4SQ",
+        "description": "Copper cable 4 sq mm FRLS (m)",
+        "qty": 1360,
+        "unit_price": 58.2,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 166057.4,
+    "tax": 29890.33,
+    "total": 195947.73,
+    "day": 4,
+    "id": "INV-0006"
+  },
+  {
+    "invoice_number": "NIT/26-27/0130",
+    "vendor_id": "V14",
+    "po_number": null,
+    "date": "2026-09-04",
+    "due_in": "Net 30",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "AMC-NET",
+        "description": "Network support AMC (monthly)",
+        "qty": 1,
+        "unit_price": 9750.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "AMC-DESK",
+        "description": "Desktop support AMC (monthly)",
+        "qty": 1,
+        "unit_price": 18500.0,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 28250.0,
+    "tax": 5085.0,
+    "total": 33335.0,
+    "day": 4,
+    "id": "INV-0007"
+  },
+  {
+    "invoice_number": "NIG/26-27/0299",
+    "vendor_id": "V11",
+    "po_number": "PO-2026-0038",
+    "date": "2026-09-05",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "O2-7M3",
+        "description": "Oxygen cylinder refill 7 m3",
+        "qty": 126,
+        "unit_price": 390.53,
+        "gst_rate": 18
+      },
+      {
+        "sku": "AR-7M3",
+        "description": "Argon cylinder refill 7 m3",
+        "qty": 29,
+        "unit_price": 1240.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "CO2-30",
+        "description": "CO2 cylinder refill 30 kg",
+        "qty": 24,
+        "unit_price": 612.35,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 99884.93,
+    "tax": 17979.29,
+    "total": 117864.22,
+    "day": 5,
+    "id": "INV-0008"
+  },
+  {
+    "invoice_number": "CEW/26-27/0362",
+    "vendor_id": "V08",
+    "po_number": "PO-2026-0039",
+    "date": "2026-09-06",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 59,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 1259.12,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 109966.62,
+    "tax": 19793.99,
+    "total": 129760.61,
+    "day": 6,
+    "id": "INV-0009"
+  },
+  {
+    "invoice_number": "AOS/26-27/0197",
+    "vendor_id": "V05",
+    "po_number": "PO-2026-0040",
+    "date": "2026-09-07",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "STAT-KIT",
+        "description": "Stationery kit (pens, files, pads)",
+        "qty": 35,
+        "unit_price": 364.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 82,
+        "unit_price": 289.55,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 36509.35,
+    "tax": 5147.1,
+    "total": 41656.0,
+    "day": 7,
+    "id": "INV-0010"
+  },
+  {
+    "invoice_number": "VCA/26-27/0202",
+    "vendor_id": "V16",
+    "po_number": "PO-2026-0041",
+    "date": "2026-09-07",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "OPC-53",
+        "description": "OPC 53 grade cement (50 kg bag)",
+        "qty": 212,
+        "unit_price": 385.5,
+        "gst_rate": 28
+      }
+    ],
+    "subtotal": 81726.0,
+    "tax": 22883.28,
+    "total": 104609.28,
+    "day": 7,
+    "id": "INV-0011"
+  },
+  {
+    "invoice_number": "SVP/26-27/0095",
+    "vendor_id": "V02",
+    "po_number": "PO-2026-0042",
+    "date": "2026-09-08",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "TAPE-48",
+        "description": "BOPP tape 48 mm x 65 m",
+        "qty": 251,
+        "unit_price": 38.82,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 9743.82,
+    "tax": 1753.89,
+    "total": 11498.0,
+    "day": 8,
+    "id": "INV-0012"
+  },
+  {
+    "invoice_number": "AOS/26-27/0198",
+    "vendor_id": "V05",
+    "po_number": "PO-2026-0043",
+    "date": "2026-09-08",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 101,
+        "unit_price": 289.55,
+        "gst_rate": 12
+      },
+      {
+        "sku": "STAT-KIT",
+        "description": "Stationery kit (pens, files, pads)",
+        "qty": 58,
+        "unit_price": 364.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TONER-88",
+        "description": "Toner cartridge 88A compatible",
+        "qty": 18,
+        "unit_price": 2450.35,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 94506.35,
+    "tax": 15256.47,
+    "total": 109762.82,
+    "day": 8,
+    "id": "INV-0013"
+  },
+  {
+    "invoice_number": "RJT/26-27/0135",
+    "vendor_id": "V07",
+    "po_number": "PO-2026-0044",
+    "date": "2026-09-08",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "description": "Poly-cotton 65/35 (m)",
+        "qty": 1221,
+        "unit_price": 138.6,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CANVAS-12",
+        "description": "Canvas 12 oz (m)",
+        "qty": 465,
+        "unit_price": 212.8,
+        "gst_rate": 5
+      },
+      {
+        "sku": "DRILL-CT",
+        "description": "Cotton drill fabric 2/1 (m)",
+        "qty": 806,
+        "unit_price": 164.25,
+        "gst_rate": 5
+      }
+    ],
+    "subtotal": 400568.1,
+    "tax": 20028.4,
+    "total": 420596.5,
+    "day": 8,
+    "id": "INV-0014"
+  },
+  {
+    "invoice_number": "GPM/26-27/0098",
+    "vendor_id": "V13",
+    "po_number": "PO-2026-0045",
+    "date": "2026-09-08",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "description": "Duplex board 300 gsm (kg)",
+        "qty": 1117,
+        "unit_price": 62.3,
+        "gst_rate": 12
+      },
+      {
+        "sku": "KRAFT-120",
+        "description": "Kraft paper 120 gsm (kg)",
+        "qty": 3922,
+        "unit_price": 48.65,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 260394.4,
+    "tax": 31247.33,
+    "total": 291641.73,
+    "day": 8,
+    "id": "INV-0015"
+  },
+  {
+    "invoice_number": "MSF/26-27/0385",
+    "vendor_id": "V10",
+    "po_number": "PO-2026-0046",
+    "date": "2026-09-09",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "description": "Black pepper whole (kg)",
+        "qty": 17,
+        "unit_price": 684.5,
+        "gst_rate": 12
+      },
+      {
+        "sku": "TUR-KG",
+        "description": "Turmeric powder (kg)",
+        "qty": 44,
+        "unit_price": 312.4,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 25382.1,
+    "tax": 3045.85,
+    "total": 28427.95,
+    "day": 9,
+    "id": "INV-0016"
+  },
+  {
+    "invoice_number": "DST/26-27/0141",
+    "vendor_id": "V01",
+    "po_number": "PO-2026-0047",
+    "date": "2026-09-10",
+    "due_in": "Net 30",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "MS-ANG-50",
+        "description": "MS Angle 50x50x5 mm (kg)",
+        "qty": 1077,
+        "unit_price": 68.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TMT-12",
+        "description": "TMT Bar Fe500 12 mm (kg)",
+        "qty": 1611,
+        "unit_price": 61.85,
+        "gst_rate": 18
+      },
+      {
+        "sku": "MS-PLT-10",
+        "description": "MS Plate 10 mm (kg)",
+        "qty": 777,
+        "unit_price": 72.1,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 3286.18,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 232668.88,
+    "tax": 41880.4,
+    "total": 274549.28,
+    "day": 10,
+    "id": "INV-0017"
+  },
+  {
+    "invoice_number": "BEC/26-27/0224",
+    "vendor_id": "V03",
+    "po_number": "PO-2026-0048",
+    "date": "2026-09-10",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "MCB-32DP",
+        "description": "MCB 32A double pole",
+        "qty": 109,
+        "unit_price": 612.4,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 66751.6,
+    "tax": 12015.29,
+    "total": 78766.89,
+    "day": 10,
+    "id": "INV-0018"
+  },
+  {
+    "invoice_number": "RJT/26-27/0136",
+    "vendor_id": "V07",
+    "po_number": "PO-2026-0049",
+    "date": "2026-09-10",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "description": "Poly-cotton 65/35 (m)",
+        "qty": 312,
+        "unit_price": 138.6,
+        "gst_rate": 5
+      }
+    ],
+    "subtotal": 43243.2,
+    "tax": 2162.16,
+    "total": 45405.36,
+    "day": 10,
+    "id": "INV-0019"
+  },
+  {
+    "invoice_number": "SCS/26-27/0128",
+    "vendor_id": "V09",
+    "po_number": null,
+    "date": "2026-09-10",
+    "due_in": "Net 7",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "CR-EXP",
+        "description": "Express document deliveries",
+        "qty": 64,
+        "unit_price": 142.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "CR-DOM",
+        "description": "Domestic courier consignments",
+        "qty": 343,
+        "unit_price": 86.4,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 38723.2,
+    "tax": 6970.18,
+    "total": 45693.38,
+    "day": 10,
+    "id": "INV-0020"
+  },
+  {
+    "invoice_number": "LHM/26-27/0100",
+    "vendor_id": "V12",
+    "po_number": "PO-2026-0050",
+    "date": "2026-09-10",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "description": "Fastener kit M8-M16 assorted",
+        "qty": 20,
+        "unit_price": 845.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "WR-E6013",
+        "description": "Welding rods E6013 3.15 mm (pkt)",
+        "qty": 36,
+        "unit_price": 1265.45,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 62463.2,
+    "tax": 11243.38,
+    "total": 73707.0,
+    "day": 10,
+    "id": "INV-0021"
+  },
+  {
+    "invoice_number": "BTT/26-27/0391",
+    "vendor_id": "V18",
+    "po_number": "PO-2026-0051",
+    "date": "2026-09-10",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CTC-KG",
+        "description": "Assam CTC tea BOP (kg)",
+        "qty": 194,
+        "unit_price": 286.4,
+        "gst_rate": 5
+      },
+      {
+        "sku": "GRN-KG",
+        "description": "Green tea leaf (kg)",
+        "qty": 52,
+        "unit_price": 512.75,
+        "gst_rate": 5
+      }
+    ],
+    "subtotal": 82224.6,
+    "tax": 4111.23,
+    "total": 86335.83,
+    "day": 10,
+    "id": "INV-0022"
+  },
+  {
+    "invoice_number": "KCL/26-27/0208",
+    "vendor_id": "V04",
+    "po_number": "PO-2026-0052",
+    "date": "2026-09-11",
+    "due_in": "Net 60",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "IPA-L",
+        "description": "Isopropyl alcohol industrial grade (L)",
+        "qty": 233,
+        "unit_price": 142.6,
+        "gst_rate": 18
+      },
+      {
+        "sku": "NAOH-KG",
+        "description": "Caustic soda flakes (kg)",
+        "qty": 588,
+        "unit_price": 54.35,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 65183.6,
+    "tax": 11733.05,
+    "total": 76916.65,
+    "day": 11,
+    "id": "INV-0023"
+  },
+  {
+    "invoice_number": "KNC/26-27/0194",
+    "vendor_id": "V15",
+    "po_number": "PO-2026-0053",
+    "date": "2026-09-11",
+    "due_in": "Net 60",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1276,
+        "unit_price": 132.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SG-500",
+        "description": "SG iron casting 500/7 (kg)",
+        "qty": 869,
+        "unit_price": 158.9,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 5225.47,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 312315.77,
+    "tax": 56216.84,
+    "total": 368532.61,
+    "day": 11,
+    "id": "INV-0024"
+  },
+  {
+    "invoice_number": "CPP/26-27/0342",
+    "vendor_id": "V17",
+    "po_number": "PO-2026-0054",
+    "date": "2026-09-11",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "BRO-A4",
+        "description": "A4 tri-fold brochure",
+        "qty": 2709,
+        "unit_price": 18.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 13,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 65903.6,
+    "tax": 11862.65,
+    "total": 77766.0,
+    "day": 11,
+    "id": "INV-0025"
+  },
+  {
+    "invoice_number": "CPP/26-27/0343",
+    "vendor_id": "V17",
+    "po_number": "PO-2026-0055",
+    "date": "2026-09-11",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 25,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BRO-A4",
+        "description": "A4 tri-fold brochure",
+        "qty": 1316,
+        "unit_price": 18.35,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 55289.85,
+    "tax": 9952.17,
+    "total": 65242.02,
+    "day": 11,
+    "id": "INV-0026"
+  },
+  {
+    "invoice_number": "NIG/26-27/0300",
+    "vendor_id": "V11",
+    "po_number": "PO-2026-0056",
+    "date": "2026-09-12",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CO2-30",
+        "description": "CO2 cylinder refill 30 kg",
+        "qty": 18,
+        "unit_price": 612.35,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 11022.3,
+    "tax": 1984.01,
+    "total": 13006.31,
+    "day": 12,
+    "id": "INV-0027"
+  },
+  {
+    "invoice_number": "GPP/26-27/0155",
+    "vendor_id": "V06",
+    "po_number": "PO-2026-0057",
+    "date": "2026-09-13",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "description": "Blue masterbatch (kg)",
+        "qty": 114,
+        "unit_price": 245.3,
+        "gst_rate": 18
+      },
+      {
+        "sku": "HDPE-GR",
+        "description": "HDPE granules blow grade (kg)",
+        "qty": 1024,
+        "unit_price": 119.94,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 150782.76,
+    "tax": 27140.9,
+    "total": 177923.66,
+    "day": 13,
+    "id": "INV-0028"
+  },
+  {
+    "invoice_number": "CEW/26-27/0363",
+    "vendor_id": "V08",
+    "po_number": "PO-2026-0058",
+    "date": "2026-09-14",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "SH-EN8-40",
+        "description": "Shaft EN8 40 mm x 1 m",
+        "qty": 23,
+        "unit_price": 2210.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 11,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GC-4",
+        "description": "Gear coupling size 4",
+        "qty": 13,
+        "unit_price": 4375.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 1997.33,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 129979.03,
+    "tax": 23396.23,
+    "total": 153375.26,
+    "day": 14,
+    "id": "INV-0029"
+  },
+  {
+    "invoice_number": "NIT/26-27/0131",
+    "vendor_id": "V14",
+    "po_number": null,
+    "date": "2026-09-14",
+    "due_in": "Net 30",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "AMC-NET",
+        "description": "Network support AMC (monthly)",
+        "qty": 1,
+        "unit_price": 9750.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "AMC-DESK",
+        "description": "Desktop support AMC (monthly)",
+        "qty": 1,
+        "unit_price": 18500.0,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 28250.0,
+    "tax": 5085.0,
+    "total": 33335.0,
+    "day": 14,
+    "id": "INV-0030"
+  },
+  {
+    "invoice_number": "KNC/26-27/0195",
+    "vendor_id": "V15",
+    "po_number": "PO-2026-0059",
+    "date": "2026-09-14",
+    "due_in": "Net 60",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1377,
+        "unit_price": 132.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SG-500",
+        "description": "SG iron casting 500/7 (kg)",
+        "qty": 1058,
+        "unit_price": 158.9,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 350499.85,
+    "tax": 63089.97,
+    "total": 413589.82,
+    "day": 14,
+    "id": "INV-0031"
+  },
+  {
+    "invoice_number": "BEC/26-27/0225",
+    "vendor_id": "V03",
+    "po_number": "PO-2026-0060",
+    "date": "2026-09-15",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "LED-40",
+        "description": "LED panel 40W 2x2 ft",
+        "qty": 74,
+        "unit_price": 1349.0,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 99826.0,
+    "tax": 17968.68,
+    "total": 117794.68,
+    "day": 15,
+    "id": "INV-0032"
+  },
+  {
+    "invoice_number": "GPM/26-27/0099",
+    "vendor_id": "V13",
+    "po_number": "PO-2026-0061",
+    "date": "2026-09-15",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "description": "Duplex board 300 gsm (kg)",
+        "qty": 1426,
+        "unit_price": 62.3,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 88839.8,
+    "tax": 10660.78,
+    "total": 99500.58,
+    "day": 15,
+    "id": "INV-0033"
+  },
+  {
+    "invoice_number": "SVP/26-27/0096",
+    "vendor_id": "V02",
+    "po_number": "PO-2026-0062",
+    "date": "2026-09-16",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "BOX-5PLY",
+        "description": "Corrugated box 5-ply 18x12x10 in",
+        "qty": 1452,
+        "unit_price": 42.42,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FILM-23",
+        "description": "Stretch film roll 23 micron",
+        "qty": 37,
+        "unit_price": 1185.55,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 105459.19,
+    "tax": 18982.65,
+    "total": 124442.0,
+    "day": 16,
+    "id": "INV-0034"
+  },
+  {
+    "invoice_number": "NIG/26-27/0301",
+    "vendor_id": "V11",
+    "po_number": "PO-2026-0063",
+    "date": "2026-09-16",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CO2-30",
+        "description": "CO2 cylinder refill 30 kg",
+        "qty": 27,
+        "unit_price": 612.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "AR-7M3",
+        "description": "Argon cylinder refill 7 m3",
+        "qty": 38,
+        "unit_price": 1240.75,
+        "gst_rate": 18
+      },
+      {
+        "sku": "O2-7M3",
+        "description": "Oxygen cylinder refill 7 m3",
+        "qty": 71,
+        "unit_price": 385.65,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 91063.1,
+    "tax": 16391.36,
+    "total": 107454.0,
+    "day": 16,
+    "id": "INV-0035"
+  },
+  {
+    "invoice_number": "GPM/26-27/0100",
+    "vendor_id": "V13",
+    "po_number": "PO-2026-0064",
+    "date": "2026-09-16",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "description": "Duplex board 300 gsm (kg)",
+        "qty": 2131,
+        "unit_price": 62.3,
+        "gst_rate": 12
+      },
+      {
+        "sku": "KRAFT-120",
+        "description": "Kraft paper 120 gsm (kg)",
+        "qty": 1744,
+        "unit_price": 48.65,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 217606.9,
+    "tax": 26112.83,
+    "total": 243719.73,
+    "day": 16,
+    "id": "INV-0036"
+  },
+  {
+    "invoice_number": "DST/26-27/0142",
+    "vendor_id": "V01",
+    "po_number": "PO-2026-0065",
+    "date": "2026-09-18",
+    "due_in": "Net 30",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "MS-PLT-10",
+        "description": "MS Plate 10 mm (kg)",
+        "qty": 310,
+        "unit_price": 72.1,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TMT-12",
+        "description": "TMT Bar Fe500 12 mm (kg)",
+        "qty": 1558,
+        "unit_price": 61.85,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 2206.23,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 120919.53,
+    "tax": 21765.52,
+    "total": 142685.05,
+    "day": 18,
+    "id": "INV-0037"
+  },
+  {
+    "invoice_number": "AOS/26-27/0199",
+    "vendor_id": "V05",
+    "po_number": "PO-2026-0066",
+    "date": "2026-09-18",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 81,
+        "unit_price": 289.62,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 23459.22,
+    "tax": 2815.11,
+    "total": 26274.0,
+    "day": 18,
+    "id": "INV-0038"
+  },
+  {
+    "invoice_number": "MSF/26-27/0386",
+    "vendor_id": "V10",
+    "po_number": "PO-2026-0067",
+    "date": "2026-09-18",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "description": "Black pepper whole (kg)",
+        "qty": 19,
+        "unit_price": 684.5,
+        "gst_rate": 12
+      },
+      {
+        "sku": "CARD-KG",
+        "description": "Cardamom 7 mm (kg)",
+        "qty": 5,
+        "unit_price": 2418.2,
+        "gst_rate": 12
+      },
+      {
+        "sku": "TUR-KG",
+        "description": "Turmeric powder (kg)",
+        "qty": 45,
+        "unit_price": 312.4,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 39154.5,
+    "tax": 4698.54,
+    "total": 43853.04,
+    "day": 18,
+    "id": "INV-0039"
+  },
+  {
+    "invoice_number": "LHM/26-27/0101",
+    "vendor_id": "V12",
+    "po_number": "PO-2026-0068",
+    "date": "2026-09-18",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "description": "Fastener kit M8-M16 assorted",
+        "qty": 43,
+        "unit_price": 845.42,
+        "gst_rate": 18
+      },
+      {
+        "sku": "WR-E6013",
+        "description": "Welding rods E6013 3.15 mm (pkt)",
+        "qty": 21,
+        "unit_price": 1265.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GLV-NIT",
+        "description": "Nitrile safety gloves (pair)",
+        "qty": 317,
+        "unit_price": 96.35,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 93470.46,
+    "tax": 14992.11,
+    "total": 108463.0,
+    "day": 18,
+    "id": "INV-0040"
+  },
+  {
+    "invoice_number": "VCA/26-27/0203",
+    "vendor_id": "V16",
+    "po_number": "PO-2026-0069",
+    "date": "2026-09-18",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "PPC-50",
+        "description": "PPC cement (50 kg bag)",
+        "qty": 228,
+        "unit_price": 362.25,
+        "gst_rate": 28
+      },
+      {
+        "sku": "OPC-53",
+        "description": "OPC 53 grade cement (50 kg bag)",
+        "qty": 218,
+        "unit_price": 385.5,
+        "gst_rate": 28
+      }
+    ],
+    "subtotal": 166632.0,
+    "tax": 46656.96,
+    "total": 213288.96,
+    "day": 18,
+    "id": "INV-0041"
+  },
+  {
+    "invoice_number": "CPP/26-27/0344",
+    "vendor_id": "V17",
+    "po_number": "PO-2026-0070",
+    "date": "2026-09-18",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "description": "Printed product labels (per 1000)",
+        "qty": 57,
+        "unit_price": 1245.65,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 71002.05,
+    "tax": 12780.37,
+    "total": 83782.0,
+    "day": 18,
+    "id": "INV-0042"
+  },
+  {
+    "invoice_number": "RJT/26-27/0137",
+    "vendor_id": "V07",
+    "po_number": "PO-2026-0071",
+    "date": "2026-09-19",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "description": "Poly-cotton 65/35 (m)",
+        "qty": 866,
+        "unit_price": 138.6,
+        "gst_rate": 5
+      },
+      {
+        "sku": "DRILL-CT",
+        "description": "Cotton drill fabric 2/1 (m)",
+        "qty": 1374,
+        "unit_price": 164.25,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CANVAS-12",
+        "description": "Canvas 12 oz (m)",
+        "qty": 811,
+        "unit_price": 212.8,
+        "gst_rate": 5
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 6874.57,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 525162.47,
+    "tax": 27151.82,
+    "total": 552314.29,
+    "day": 19,
+    "id": "INV-0043"
+  },
+  {
+    "invoice_number": "KNC/26-27/0196",
+    "vendor_id": "V15",
+    "po_number": "PO-2026-0072",
+    "date": "2026-09-19",
+    "due_in": "Net 60",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1239,
+        "unit_price": 134.5,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 166645.5,
+    "tax": 29996.19,
+    "total": 196641.69,
+    "day": 19,
+    "id": "INV-0044"
+  },
+  {
+    "invoice_number": "BTT/26-27/0392",
+    "vendor_id": "V18",
+    "po_number": "PO-2026-0073",
+    "date": "2026-09-19",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "GRN-KG",
+        "description": "Green tea leaf (kg)",
+        "qty": 45,
+        "unit_price": 512.75,
+        "gst_rate": 5
+      }
+    ],
+    "subtotal": 23073.75,
+    "tax": 1153.69,
+    "total": 24227.44,
+    "day": 19,
+    "id": "INV-0045"
+  },
+  {
+    "invoice_number": "KCL/26-27/0209",
+    "vendor_id": "V04",
+    "po_number": "PO-2026-0074",
+    "date": "2026-09-20",
+    "due_in": "Net 60",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "DX40-L",
+        "description": "Degreasing agent DX-40 (L)",
+        "qty": 273,
+        "unit_price": 188.9,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 51569.7,
+    "tax": 9282.55,
+    "total": 60852.25,
+    "day": 20,
+    "id": "INV-0046"
+  },
+  {
+    "invoice_number": "SCS/26-27/0129",
+    "vendor_id": "V09",
+    "po_number": null,
+    "date": "2026-09-20",
+    "due_in": "Net 7",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "CR-EXP",
+        "description": "Express document deliveries",
+        "qty": 86,
+        "unit_price": 142.0,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 12212.0,
+    "tax": 2198.16,
+    "total": 14410.16,
+    "day": 20,
+    "id": "INV-0047"
+  },
+  {
+    "invoice_number": "BEC/26-27/0226",
+    "vendor_id": "V03",
+    "po_number": "PO-2026-0075",
+    "date": "2026-09-23",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CU-4SQ",
+        "description": "Copper cable 4 sq mm FRLS (m)",
+        "qty": 967,
+        "unit_price": 58.2,
+        "gst_rate": 18
+      },
+      {
+        "sku": "LED-40",
+        "description": "LED panel 40W 2x2 ft",
+        "qty": 72,
+        "unit_price": 1349.0,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 153407.4,
+    "tax": 27613.33,
+    "total": 181020.73,
+    "day": 23,
+    "id": "INV-0048"
+  },
+  {
+    "invoice_number": "GPP/26-27/0156",
+    "vendor_id": "V06",
+    "po_number": "PO-2026-0076",
+    "date": "2026-09-23",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "description": "Blue masterbatch (kg)",
+        "qty": 44,
+        "unit_price": 248.13,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 10917.72,
+    "tax": 1965.19,
+    "total": 12882.91,
+    "day": 23,
+    "id": "INV-0049"
+  },
+  {
+    "invoice_number": "NIT/26-27/0132",
+    "vendor_id": "V14",
+    "po_number": null,
+    "date": "2026-09-23",
+    "due_in": "Net 30",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "AMC-DESK",
+        "description": "Desktop support AMC (monthly)",
+        "qty": 1,
+        "unit_price": 18500.0,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 18500.0,
+    "tax": 3330.0,
+    "total": 21830.0,
+    "day": 23,
+    "id": "INV-0050"
+  },
+  {
+    "invoice_number": "DST/26-27/0143",
+    "vendor_id": "V01",
+    "po_number": "PO-2026-0077",
+    "date": "2026-09-24",
+    "due_in": "Net 30",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "MS-PLT-10",
+        "description": "MS Plate 10 mm (kg)",
+        "qty": 739,
+        "unit_price": 72.1,
+        "gst_rate": 18
+      },
+      {
+        "sku": "TMT-12",
+        "description": "TMT Bar Fe500 12 mm (kg)",
+        "qty": 1125,
+        "unit_price": 61.85,
+        "gst_rate": 18
+      },
+      {
+        "sku": "MS-ANG-50",
+        "description": "MS Angle 50x50x5 mm (kg)",
+        "qty": 523,
+        "unit_price": 68.45,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 158662.5,
+    "tax": 28559.25,
+    "total": 187221.75,
+    "day": 24,
+    "id": "INV-0051"
+  },
+  {
+    "invoice_number": "CEW/26-27/0364",
+    "vendor_id": "V08",
+    "po_number": "PO-2026-0078",
+    "date": "2026-09-24",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "SH-EN8-40",
+        "description": "Shaft EN8 40 mm x 1 m",
+        "qty": 26,
+        "unit_price": 2210.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 15,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GC-4",
+        "description": "Gear coupling size 4",
+        "qty": 9,
+        "unit_price": 4375.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 1608.18,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 126091.08,
+    "tax": 22696.39,
+    "total": 148787.47,
+    "day": 24,
+    "id": "INV-0052"
+  },
+  {
+    "invoice_number": "LHM/26-27/0099-A",
+    "vendor_id": "V12",
+    "po_number": "PO-2026-0034",
+    "date": "2026-09-24",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "description": "Fastener kit M8-M16 assorted",
+        "qty": 37,
+        "unit_price": 845.42,
+        "gst_rate": 18
+      },
+      {
+        "sku": "WR-E6013",
+        "description": "Welding rods E6013 3.15 mm (pkt)",
+        "qty": 10,
+        "unit_price": 1265.45,
+        "gst_rate": 18
+      },
+      {
+        "sku": "GLV-NIT",
+        "description": "Nitrile safety gloves (pair)",
+        "qty": 366,
+        "unit_price": 96.35,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 79199.14,
+    "tax": 12140.0,
+    "total": 91339.0,
+    "day": 24,
+    "id": "INV-0053"
+  },
+  {
+    "invoice_number": "GPM/26-27/0101",
+    "vendor_id": "V13",
+    "po_number": "PO-2026-0079",
+    "date": "2026-09-24",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "KRAFT-120",
+        "description": "Kraft paper 120 gsm (kg)",
+        "qty": 2845,
+        "unit_price": 48.65,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 138409.25,
+    "tax": 16609.11,
+    "total": 155018.36,
+    "day": 24,
+    "id": "INV-0054"
+  },
+  {
+    "invoice_number": "SVP/26-27/0097",
+    "vendor_id": "V02",
+    "po_number": "PO-2026-0080",
+    "date": "2026-09-25",
+    "due_in": "Net 45",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "FILM-23",
+        "description": "Stretch film roll 23 micron",
+        "qty": 14,
+        "unit_price": 1185.55,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 16597.7,
+    "tax": 2987.59,
+    "total": 19585.0,
+    "day": 25,
+    "id": "INV-0055"
+  },
+  {
+    "invoice_number": "AOS/26-27/0200",
+    "vendor_id": "V05",
+    "po_number": "PO-2026-0081",
+    "date": "2026-09-25",
+    "due_in": "Net 15",
+    "tax_type": "CGST+SGST",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "description": "A4 copier paper 75 gsm (ream)",
+        "qty": 77,
+        "unit_price": 289.76,
+        "gst_rate": 12
+      },
+      {
+        "sku": "TONER-88",
+        "description": "Toner cartridge 88A compatible",
+        "qty": 8,
+        "unit_price": 2450.35,
+        "gst_rate": 18
+      },
+      {
+        "sku": "STAT-KIT",
+        "description": "Stationery kit (pens, files, pads)",
+        "qty": 27,
+        "unit_price": 364.75,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 51762.57,
+    "tax": 7978.57,
+    "total": 59741.0,
+    "day": 25,
+    "id": "INV-0056"
+  },
+  {
+    "invoice_number": "NIG/26-27/0302",
+    "vendor_id": "V11",
+    "po_number": "PO-2026-0082",
+    "date": "2026-09-25",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "O2-7M3",
+        "description": "Oxygen cylinder refill 7 m3",
+        "qty": 141,
+        "unit_price": 393.64,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 55503.24,
+    "tax": 9990.58,
+    "total": 65494.0,
+    "day": 25,
+    "id": "INV-0057"
+  },
+  {
+    "invoice_number": "CEW/26-27/0365",
+    "vendor_id": "V08",
+    "po_number": "PO-2026-0083",
+    "date": "2026-09-26",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "GC-4",
+        "description": "Gear coupling size 4",
+        "qty": 16,
+        "unit_price": 4375.0,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SH-EN8-40",
+        "description": "Shaft EN8 40 mm x 1 m",
+        "qty": 13,
+        "unit_price": 2210.4,
+        "gst_rate": 18
+      },
+      {
+        "sku": "BH-UCP210",
+        "description": "Bearing housing UCP 210",
+        "qty": 42,
+        "unit_price": 1842.5,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 16907.54,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 193027.74,
+    "tax": 34744.99,
+    "total": 227772.73,
+    "day": 26,
+    "id": "INV-0058"
+  },
+  {
+    "invoice_number": "MSF/26-27/0387",
+    "vendor_id": "V10",
+    "po_number": "PO-2026-0084",
+    "date": "2026-09-26",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "description": "Black pepper whole (kg)",
+        "qty": 33,
+        "unit_price": 684.5,
+        "gst_rate": 12
+      },
+      {
+        "sku": "CARD-KG",
+        "description": "Cardamom 7 mm (kg)",
+        "qty": 7,
+        "unit_price": 2418.2,
+        "gst_rate": 12
+      },
+      {
+        "sku": "TUR-KG",
+        "description": "Turmeric powder (kg)",
+        "qty": 58,
+        "unit_price": 312.4,
+        "gst_rate": 12
+      }
+    ],
+    "subtotal": 57635.1,
+    "tax": 6916.21,
+    "total": 64551.31,
+    "day": 26,
+    "id": "INV-0059"
+  },
+  {
+    "invoice_number": "VCA/26-27/0204",
+    "vendor_id": "V16",
+    "po_number": "PO-2026-0085",
+    "date": "2026-09-27",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "OPC-53",
+        "description": "OPC 53 grade cement (50 kg bag)",
+        "qty": 400,
+        "unit_price": 385.5,
+        "gst_rate": 28
+      },
+      {
+        "sku": "PPC-50",
+        "description": "PPC cement (50 kg bag)",
+        "qty": 586,
+        "unit_price": 362.25,
+        "gst_rate": 28
+      }
+    ],
+    "subtotal": 366478.5,
+    "tax": 102613.98,
+    "total": 469092.48,
+    "day": 27,
+    "id": "INV-0060"
+  },
+  {
+    "invoice_number": "KCL/26-27/0210",
+    "vendor_id": "V04",
+    "po_number": "PO-2026-0086",
+    "date": "2026-09-28",
+    "due_in": "Net 60",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "DX40-L",
+        "description": "Degreasing agent DX-40 (L)",
+        "qty": 60,
+        "unit_price": 188.9,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 11334.0,
+    "tax": 2040.12,
+    "total": 13374.12,
+    "day": 28,
+    "id": "INV-0061"
+  },
+  {
+    "invoice_number": "RJT/26-27/0138",
+    "vendor_id": "V07",
+    "po_number": "PO-2026-0087",
+    "date": "2026-09-28",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CANVAS-12",
+        "description": "Canvas 12 oz (m)",
+        "qty": 484,
+        "unit_price": 212.8,
+        "gst_rate": 5
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 1492.1,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 104487.3,
+    "tax": 5418.34,
+    "total": 109905.64,
+    "day": 28,
+    "id": "INV-0062"
+  },
+  {
+    "invoice_number": "KNC/26-27/0197",
+    "vendor_id": "V15",
+    "po_number": "PO-2026-0088",
+    "date": "2026-09-28",
+    "due_in": "Net 60",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "description": "CI casting FG260 (kg)",
+        "qty": 1182,
+        "unit_price": 135.82,
+        "gst_rate": 18
+      },
+      {
+        "sku": "SG-500",
+        "description": "SG iron casting 500/7 (kg)",
+        "qty": 957,
+        "unit_price": 158.9,
+        "gst_rate": 18
+      },
+      {
+        "sku": "FREIGHT",
+        "description": "Freight & forwarding charges",
+        "qty": 1,
+        "unit_price": 4263.46,
+        "gst_rate": 18
+      }
+    ],
+    "subtotal": 316870.0,
+    "tax": 57036.6,
+    "total": 373906.6,
+    "day": 28,
+    "id": "INV-0063"
+  },
+  {
+    "invoice_number": "BTT/26-27/0393",
+    "vendor_id": "V18",
+    "po_number": "PO-2026-0089",
+    "date": "2026-09-28",
+    "due_in": "Net 30",
+    "tax_type": "IGST",
+    "lines": [
+      {
+        "sku": "GRN-KG",
+        "description": "Green tea leaf (kg)",
+        "qty": 39,
+        "unit_price": 512.75,
+        "gst_rate": 5
+      },
+      {
+        "sku": "CTC-KG",
+        "description": "Assam CTC tea BOP (kg)",
+        "qty": 72,
+        "unit_price": 286.4,
+        "gst_rate": 5
+      }
+    ],
+    "subtotal": 40618.05,
+    "tax": 2030.9,
+    "total": 42648.95,
+    "day": 28,
+    "id": "INV-0064"
+  }
+]

@@ -1,0 +1,841 @@
+[
+  {
+    "grn_number": "GRN-2026-0033",
+    "po_number": "PO-2026-0033",
+    "date": "2026-08-20",
+    "lines": [
+      {
+        "sku": "MS-ANG-50",
+        "qty_received": 1042
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0034",
+    "po_number": "PO-2026-0034",
+    "date": "2026-08-20",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "qty_received": 37
+      },
+      {
+        "sku": "WR-E6013",
+        "qty_received": 10
+      },
+      {
+        "sku": "GLV-NIT",
+        "qty_received": 366
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0035",
+    "po_number": "PO-2026-0035",
+    "date": "2026-08-27",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "qty_received": 89
+      },
+      {
+        "sku": "PP-GR",
+        "qty_received": 1133
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0036",
+    "po_number": "PO-2026-0036",
+    "date": "2026-08-23",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "qty_received": 53
+      },
+      {
+        "sku": "BRO-A4",
+        "qty_received": 1212
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0037",
+    "po_number": "PO-2026-0037",
+    "date": "2026-08-19",
+    "lines": [
+      {
+        "sku": "LED-40",
+        "qty_received": 39
+      },
+      {
+        "sku": "MCB-32DP",
+        "qty_received": 37
+      },
+      {
+        "sku": "CU-4SQ",
+        "qty_received": 1360
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0038",
+    "po_number": "PO-2026-0038",
+    "date": "2026-08-28",
+    "lines": [
+      {
+        "sku": "O2-7M3",
+        "qty_received": 126
+      },
+      {
+        "sku": "AR-7M3",
+        "qty_received": 29
+      },
+      {
+        "sku": "CO2-30",
+        "qty_received": 24
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0039",
+    "po_number": "PO-2026-0039",
+    "date": "2026-08-26",
+    "lines": [
+      {
+        "sku": "BH-UCP210",
+        "qty_received": 59
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0040",
+    "po_number": "PO-2026-0040",
+    "date": "2026-08-27",
+    "lines": [
+      {
+        "sku": "STAT-KIT",
+        "qty_received": 35
+      },
+      {
+        "sku": "A4-REAM",
+        "qty_received": 82
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0041",
+    "po_number": "PO-2026-0041",
+    "date": "2026-09-01",
+    "lines": [
+      {
+        "sku": "OPC-53",
+        "qty_received": 212
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0042",
+    "po_number": "PO-2026-0042",
+    "date": "2026-08-26",
+    "lines": [
+      {
+        "sku": "TAPE-48",
+        "qty_received": 251
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0043",
+    "po_number": "PO-2026-0043",
+    "date": "2026-09-01",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "qty_received": 101
+      },
+      {
+        "sku": "STAT-KIT",
+        "qty_received": 58
+      },
+      {
+        "sku": "TONER-88",
+        "qty_received": 18
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0044",
+    "po_number": "PO-2026-0044",
+    "date": "2026-09-01",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "qty_received": 1221
+      },
+      {
+        "sku": "CANVAS-12",
+        "qty_received": 465
+      },
+      {
+        "sku": "DRILL-CT",
+        "qty_received": 806
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0045",
+    "po_number": "PO-2026-0045",
+    "date": "2026-08-30",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "qty_received": 1117
+      },
+      {
+        "sku": "KRAFT-120",
+        "qty_received": 2145
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0046",
+    "po_number": "PO-2026-0046",
+    "date": "2026-08-31",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "qty_received": 17
+      },
+      {
+        "sku": "TUR-KG",
+        "qty_received": 44
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0047",
+    "po_number": "PO-2026-0047",
+    "date": "2026-08-30",
+    "lines": [
+      {
+        "sku": "MS-ANG-50",
+        "qty_received": 1077
+      },
+      {
+        "sku": "TMT-12",
+        "qty_received": 1611
+      },
+      {
+        "sku": "MS-PLT-10",
+        "qty_received": 777
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0048",
+    "po_number": "PO-2026-0048",
+    "date": "2026-08-31",
+    "lines": [
+      {
+        "sku": "MCB-32DP",
+        "qty_received": 109
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0049",
+    "po_number": "PO-2026-0049",
+    "date": "2026-08-30",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "qty_received": 175
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0050",
+    "po_number": "PO-2026-0050",
+    "date": "2026-08-31",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "qty_received": 20
+      },
+      {
+        "sku": "WR-E6013",
+        "qty_received": 36
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0051",
+    "po_number": "PO-2026-0051",
+    "date": "2026-08-31",
+    "lines": [
+      {
+        "sku": "CTC-KG",
+        "qty_received": 100
+      },
+      {
+        "sku": "GRN-KG",
+        "qty_received": 52
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0052",
+    "po_number": "PO-2026-0052",
+    "date": "2026-09-01",
+    "lines": [
+      {
+        "sku": "IPA-L",
+        "qty_received": 233
+      },
+      {
+        "sku": "NAOH-KG",
+        "qty_received": 588
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0053",
+    "po_number": "PO-2026-0053",
+    "date": "2026-08-31",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "qty_received": 1276
+      },
+      {
+        "sku": "SG-500",
+        "qty_received": 869
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0054",
+    "po_number": "PO-2026-0054",
+    "date": "2026-08-27",
+    "lines": [
+      {
+        "sku": "BRO-A4",
+        "qty_received": 2709
+      },
+      {
+        "sku": "LBL-1K",
+        "qty_received": 13
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0055",
+    "po_number": "PO-2026-0055",
+    "date": "2026-09-03",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "qty_received": 25
+      },
+      {
+        "sku": "BRO-A4",
+        "qty_received": 1316
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0056",
+    "po_number": "PO-2026-0056",
+    "date": "2026-09-03",
+    "lines": [
+      {
+        "sku": "CO2-30",
+        "qty_received": 18
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0057",
+    "po_number": "PO-2026-0057",
+    "date": "2026-09-05",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "qty_received": 114
+      },
+      {
+        "sku": "HDPE-GR",
+        "qty_received": 1024
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0058",
+    "po_number": "PO-2026-0058",
+    "date": "2026-09-02",
+    "lines": [
+      {
+        "sku": "SH-EN8-40",
+        "qty_received": 23
+      },
+      {
+        "sku": "BH-UCP210",
+        "qty_received": 11
+      },
+      {
+        "sku": "GC-4",
+        "qty_received": 13
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0059",
+    "po_number": "PO-2026-0059",
+    "date": "2026-09-05",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "qty_received": 1377
+      },
+      {
+        "sku": "SG-500",
+        "qty_received": 1058
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0060",
+    "po_number": "PO-2026-0060",
+    "date": "2026-09-02",
+    "lines": [
+      {
+        "sku": "LED-40",
+        "qty_received": 49
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0061",
+    "po_number": "PO-2026-0061",
+    "date": "2026-09-05",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "qty_received": 1426
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0062",
+    "po_number": "PO-2026-0062",
+    "date": "2026-09-03",
+    "lines": [
+      {
+        "sku": "BOX-5PLY",
+        "qty_received": 1452
+      },
+      {
+        "sku": "FILM-23",
+        "qty_received": 37
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0063",
+    "po_number": "PO-2026-0063",
+    "date": "2026-09-05",
+    "lines": [
+      {
+        "sku": "CO2-30",
+        "qty_received": 27
+      },
+      {
+        "sku": "AR-7M3",
+        "qty_received": 38
+      },
+      {
+        "sku": "O2-7M3",
+        "qty_received": 71
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0064",
+    "po_number": "PO-2026-0064",
+    "date": "2026-09-11",
+    "lines": [
+      {
+        "sku": "DUPLEX-300",
+        "qty_received": 2131
+      },
+      {
+        "sku": "KRAFT-120",
+        "qty_received": 946
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0065",
+    "po_number": "PO-2026-0065",
+    "date": "2026-09-10",
+    "lines": [
+      {
+        "sku": "MS-PLT-10",
+        "qty_received": 310
+      },
+      {
+        "sku": "TMT-12",
+        "qty_received": 1558
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0066",
+    "po_number": "PO-2026-0066",
+    "date": "2026-09-07",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "qty_received": 81
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0067",
+    "po_number": "PO-2026-0067",
+    "date": "2026-09-10",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "qty_received": 19
+      },
+      {
+        "sku": "CARD-KG",
+        "qty_received": 5
+      },
+      {
+        "sku": "TUR-KG",
+        "qty_received": 45
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0068",
+    "po_number": "PO-2026-0068",
+    "date": "2026-09-07",
+    "lines": [
+      {
+        "sku": "FAST-KIT",
+        "qty_received": 43
+      },
+      {
+        "sku": "WR-E6013",
+        "qty_received": 21
+      },
+      {
+        "sku": "GLV-NIT",
+        "qty_received": 317
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0069",
+    "po_number": "PO-2026-0069",
+    "date": "2026-09-08",
+    "lines": [
+      {
+        "sku": "PPC-50",
+        "qty_received": 228
+      },
+      {
+        "sku": "OPC-53",
+        "qty_received": 218
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0070",
+    "po_number": "PO-2026-0070",
+    "date": "2026-09-05",
+    "lines": [
+      {
+        "sku": "LBL-1K",
+        "qty_received": 57
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0071",
+    "po_number": "PO-2026-0071",
+    "date": "2026-09-11",
+    "lines": [
+      {
+        "sku": "PC-6535",
+        "qty_received": 866
+      },
+      {
+        "sku": "DRILL-CT",
+        "qty_received": 1374
+      },
+      {
+        "sku": "CANVAS-12",
+        "qty_received": 811
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0072",
+    "po_number": "PO-2026-0072",
+    "date": "2026-09-08",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "qty_received": 1239
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0073",
+    "po_number": "PO-2026-0073",
+    "date": "2026-09-11",
+    "lines": [
+      {
+        "sku": "GRN-KG",
+        "qty_received": 29
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0074",
+    "po_number": "PO-2026-0074",
+    "date": "2026-09-05",
+    "lines": [
+      {
+        "sku": "DX40-L",
+        "qty_received": 273
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0075",
+    "po_number": "PO-2026-0075",
+    "date": "2026-09-14",
+    "lines": [
+      {
+        "sku": "CU-4SQ",
+        "qty_received": 561
+      },
+      {
+        "sku": "LED-40",
+        "qty_received": 72
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0076",
+    "po_number": "PO-2026-0076",
+    "date": "2026-09-16",
+    "lines": [
+      {
+        "sku": "MB-BLUE",
+        "qty_received": 44
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0077",
+    "po_number": "PO-2026-0077",
+    "date": "2026-09-16",
+    "lines": [
+      {
+        "sku": "MS-PLT-10",
+        "qty_received": 739
+      },
+      {
+        "sku": "TMT-12",
+        "qty_received": 1125
+      },
+      {
+        "sku": "MS-ANG-50",
+        "qty_received": 523
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0078",
+    "po_number": "PO-2026-0078",
+    "date": "2026-09-15",
+    "lines": [
+      {
+        "sku": "SH-EN8-40",
+        "qty_received": 26
+      },
+      {
+        "sku": "BH-UCP210",
+        "qty_received": 15
+      },
+      {
+        "sku": "GC-4",
+        "qty_received": 9
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0079",
+    "po_number": "PO-2026-0079",
+    "date": "2026-09-19",
+    "lines": [
+      {
+        "sku": "KRAFT-120",
+        "qty_received": 1588
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0080",
+    "po_number": "PO-2026-0080",
+    "date": "2026-09-16",
+    "lines": [
+      {
+        "sku": "FILM-23",
+        "qty_received": 14
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0081",
+    "po_number": "PO-2026-0081",
+    "date": "2026-09-11",
+    "lines": [
+      {
+        "sku": "A4-REAM",
+        "qty_received": 77
+      },
+      {
+        "sku": "TONER-88",
+        "qty_received": 8
+      },
+      {
+        "sku": "STAT-KIT",
+        "qty_received": 27
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0082",
+    "po_number": "PO-2026-0082",
+    "date": "2026-09-18",
+    "lines": [
+      {
+        "sku": "O2-7M3",
+        "qty_received": 141
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0083",
+    "po_number": "PO-2026-0083",
+    "date": "2026-09-13",
+    "lines": [
+      {
+        "sku": "GC-4",
+        "qty_received": 16
+      },
+      {
+        "sku": "SH-EN8-40",
+        "qty_received": 13
+      },
+      {
+        "sku": "BH-UCP210",
+        "qty_received": 42
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0084",
+    "po_number": "PO-2026-0084",
+    "date": "2026-09-21",
+    "lines": [
+      {
+        "sku": "PEP-KG",
+        "qty_received": 33
+      },
+      {
+        "sku": "CARD-KG",
+        "qty_received": 7
+      },
+      {
+        "sku": "TUR-KG",
+        "qty_received": 58
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0085",
+    "po_number": "PO-2026-0085",
+    "date": "2026-09-20",
+    "lines": [
+      {
+        "sku": "OPC-53",
+        "qty_received": 400
+      },
+      {
+        "sku": "PPC-50",
+        "qty_received": 586
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0086",
+    "po_number": "PO-2026-0086",
+    "date": "2026-09-20",
+    "lines": [
+      {
+        "sku": "DX40-L",
+        "qty_received": 60
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0087",
+    "po_number": "PO-2026-0087",
+    "date": "2026-09-15",
+    "lines": [
+      {
+        "sku": "CANVAS-12",
+        "qty_received": 339
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0088",
+    "po_number": "PO-2026-0088",
+    "date": "2026-09-18",
+    "lines": [
+      {
+        "sku": "CI-FG260",
+        "qty_received": 1182
+      },
+      {
+        "sku": "SG-500",
+        "qty_received": 957
+      }
+    ]
+  },
+  {
+    "grn_number": "GRN-2026-0089",
+    "po_number": "PO-2026-0089",
+    "date": "2026-09-12",
+    "lines": [
+      {
+        "sku": "GRN-KG",
+        "qty_received": 39
+      },
+      {
+        "sku": "CTC-KG",
+        "qty_received": 40
+      }
+    ]
+  }
+]
