@@ -222,7 +222,7 @@ class MemoryService:
         return text
 
     async def recall_vendor_history(
-        self, vendor: dict[str, Any], flags: list[dict[str, Any]], limit: int = 6
+        self, vendor: dict[str, Any], flags: list[dict[str, Any]], limit: int = 10
     ) -> list[MemoryItem]:
         """Recall past decisions for this vendor relevant to these exceptions.
 

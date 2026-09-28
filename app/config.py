@@ -34,7 +34,7 @@ def get_settings() -> Settings:
     return Settings(
         groq_api_key=os.getenv("GROQ_API_KEY") or None,
         groq_model=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
-        groq_fallback_model=os.getenv("GROQ_FALLBACK_MODEL", "qwen/qwen3-32b"),
+        groq_fallback_model=os.getenv("GROQ_FALLBACK_MODEL", "qwen/qwen3.8-27b,openai/gpt-oss-20b"),
         hindsight_base_url=os.getenv("HINDSIGHT_BASE_URL") or None,
         hindsight_api_key=os.getenv("HINDSIGHT_API_KEY") or None,
         bank_id=os.getenv("HINDSIGHT_BANK_ID", "ledgerlens-ap"),

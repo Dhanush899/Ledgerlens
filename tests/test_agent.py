@@ -56,6 +56,21 @@ def test_guardrail_passes_supported_approve():
     assert res["action"] == "approve" and g is None
 
 
+def test_rate_limited_primary_falls_back_to_second_model(monkeypatch):
+    calls = []
+
+    async def fake_chat(messages, model, **kw):
+        calls.append(model)
+        if model == "primary":
+            raise llm.ModelRateLimited("daily quota")
+        return '{"action": "hold", "confidence": 0.8, "reason": "r", "cited_memories": []}'
+
+    monkeypatch.setattr(llm, "models", lambda: ["primary", "fallback"])
+    monkeypatch.setattr(llm, "chat", fake_chat)
+    out, model = asyncio.run(llm.complete_json([], agent.make_validator(MEMS)))
+    assert model == "fallback" and out["action"] == "hold" and calls == ["primary", "fallback"]
+
+
 def test_suggest_falls_back_to_escalate_when_llm_fails(monkeypatch):
     async def boom(*a, **k):
         raise llm.LLMUnavailable("down")

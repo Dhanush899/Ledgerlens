@@ -14,8 +14,15 @@ log = logging.getLogger(__name__)
 _client = None
 
 
+MAX_RATE_LIMIT_WAIT = 20.0  # seconds; longer waits (e.g. daily quota) switch to the fallback model
+
+
 class LLMUnavailable(RuntimeError):
     """Raised when no model could produce a usable answer."""
+
+
+class ModelRateLimited(RuntimeError):
+    """One model is rate limited for longer than we are willing to wait."""
 
 
 def _get_client():
@@ -31,9 +38,10 @@ def _get_client():
 
 
 def models() -> list[str]:
-    """Primary model first, then fallback."""
+    """Primary model first, then the fallbacks (GROQ_FALLBACK_MODEL may be comma-separated)."""
     s = get_settings()
-    return [m for m in (s.groq_model, s.groq_fallback_model) if m]
+    fallbacks = [m.strip() for m in s.groq_fallback_model.split(",")]
+    return [m for m in [s.groq_model, *fallbacks] if m]
 
 
 def _extra_body(model: str) -> dict[str, Any]:
@@ -66,7 +74,11 @@ async def chat(
     temperature: float = 0.1,
     max_tokens: int = 700,
 ) -> str:
-    """Single chat completion; waits and retries (up to 3x) on rate limits."""
+    """Single chat completion.
+
+    Short rate limits (per-minute) are waited out and retried; long ones (per-day
+    quota) raise ModelRateLimited at once so the caller can switch models.
+    """
     from groq import BadRequestError, RateLimitError
 
     client = _get_client()
@@ -80,8 +92,10 @@ async def chat(
             return resp.choices[0].message.content or ""
         except RateLimitError as e:
             wait = _retry_after(e) or 2 ** (attempt + 1)
+            if wait > MAX_RATE_LIMIT_WAIT:
+                raise ModelRateLimited(f"{model} rate limited for {wait:.0f}s") from e
             log.warning("Groq rate limited on %s, waiting %.1fs", model, wait)
-            await asyncio.sleep(min(wait, 30))
+            await asyncio.sleep(wait)
         except BadRequestError as e:
             # Some models reject json mode or a reasoning option: retry once plain.
             if "response_format" in kwargs or kwargs.get("extra_body"):
@@ -90,7 +104,7 @@ async def chat(
                 kwargs["extra_body"] = {}
                 continue
             raise
-    raise LLMUnavailable(f"{model} kept rate limiting")
+    raise ModelRateLimited(f"{model} kept rate limiting")
 
 
 def _retry_after(e: Exception) -> float | None:

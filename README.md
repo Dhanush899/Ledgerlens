@@ -31,8 +31,8 @@ http://localhost:8000.
 
 | Variable | Purpose |
 |---|---|
-| `GROQ_API_KEY` | Groq LLM. Model `openai/gpt-oss-120b`, fallback `qwen/qwen3-32b` |
-| `HINDSIGHT_BASE_URL` | Hindsight Cloud or self-hosted (`http://localhost:8888`). **Empty = local stand-in** |
+| `GROQ_API_KEY` | Groq LLM. Model `openai/gpt-oss-120b`; `GROQ_FALLBACK_MODEL` is a comma-separated list (default `qwen/qwen3.8-27b,openai/gpt-oss-20b`) tried in order when a model errors or hits its daily quota |
+| `HINDSIGHT_BASE_URL` | Hindsight Cloud (`https://api.hindsight.vectorize.io`) or self-hosted (`http://localhost:8888`). **Empty = local stand-in** |
 | `HINDSIGHT_API_KEY` | Hindsight Cloud API key |
 | `HINDSIGHT_BANK_ID` | Memory bank, default `ledgerlens-ap` |
 

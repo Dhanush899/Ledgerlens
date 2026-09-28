@@ -89,12 +89,21 @@ class LedgerLens:
 
     # ---- seed + replay -----------------------------------------------------------
     async def seed_history(self) -> int:
-        """Replay August's historical clerk decisions into memory."""
-        for h in self.store.history:
+        """Replay August's historical clerk decisions into memory.
+
+        History items are independent, so they are retained concurrently (Hindsight
+        retain runs its own LLM extraction and takes seconds per item).
+        """
+        sem = asyncio.Semaphore(6)
+
+        async def one(h: dict) -> None:
             vendor = self.store.vendors[h["vendor_id"]]
             pseudo_invoice = {"id": h["id"], "invoice_number": h["invoice_number"], "date": h["date"],
                               "total": h["total"]}
-            await self.memory.retain_decision(pseudo_invoice, vendor, h["flags"], h["decision"], h["note"])
+            async with sem:
+                await self.memory.retain_decision(pseudo_invoice, vendor, h["flags"], h["decision"], h["note"])
+
+        await asyncio.gather(*(one(h) for h in self.store.history))
         return len(self.store.history)
 
     def start_replay(self, through_day: int) -> dict[str, Any]:
