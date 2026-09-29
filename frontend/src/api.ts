@@ -74,6 +74,8 @@ export interface Decision {
   agreed: boolean;
   needs_human: boolean;
   retained_memory: string | null;
+  retain_ms: number | null;
+  memory_backend: string;
 }
 
 export interface InvoiceContext {
@@ -104,6 +106,7 @@ export interface Health {
   memory_backend: string;
   memory_enabled: boolean;
   bank_id: string;
+  memory_host: string | null;
   llm_configured: boolean;
   models: string[];
 }
@@ -133,6 +136,37 @@ export interface ReplayStatus {
   through_day: number | null;
 }
 
+export interface MemoryInfo {
+  backend: string;
+  bank_id: string;
+  host: string | null;
+  enabled: boolean;
+  counts: { retain: number; recall: number; reflect: number };
+}
+
+export interface Activity {
+  id: number;
+  op: "retain" | "recall" | "reflect" | "reset";
+  summary: string;
+  vendor_id: string | null;
+  ok: boolean;
+  at: string;
+  ms: number;
+  result: string | null;
+}
+
+export interface Compare {
+  with_memory: Suggestion;
+  without_memory: Suggestion;
+  recalled: Memory[];
+}
+
+export interface Answer {
+  answer: string;
+  evidence: Memory[];
+  backend: string;
+}
+
 async function req<T>(path: string, body?: unknown): Promise<T> {
   const res = await fetch(`/api${path}`, {
     method: body === undefined ? "GET" : "POST",
@@ -159,7 +193,11 @@ export const api = {
   decide: (id: string, action: Action, note: string) => req<Decision>(`/invoices/${id}/decision`, { action, note }),
   vendors: () => req<Vendor[]>("/vendors"),
   vendorMemories: (id: string) => req<Memory[]>(`/vendors/${id}/memories`),
-  vendorProfile: (id: string) => req<{ profile: string; backend: string }>(`/vendors/${id}/profile`),
+  vendorProfile: (id: string) => req<{ profile: string; evidence: Memory[]; backend: string }>(`/vendors/${id}/profile`),
+  compare: (id: string) => req<Compare>(`/invoices/${id}/compare`, {}),
+  memoryInfo: () => req<MemoryInfo>("/memory"),
+  activity: () => req<Activity[]>("/memory/activity"),
+  ask: (question: string, vendor_id?: string) => req<Answer>("/memory/ask", { question, vendor_id: vendor_id || null }),
   toggleMemory: (enabled: boolean) => req<{ enabled: boolean }>("/memory/toggle", { enabled }),
   seed: () => req<{ retained: number }>("/memory/seed", {}),
   reset: (memory = true, queue = true) => req<{ ok: boolean }>("/reset", { memory, queue }),

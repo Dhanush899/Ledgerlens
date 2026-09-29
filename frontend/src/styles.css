@@ -247,3 +247,71 @@ textarea {
   .kpis { grid-template-columns: repeat(2, 1fr); }
   .topbar { flex-wrap: wrap; gap: 10px; }
 }
+
+/* ---- hindsight console, compare, guide, toasts ---- */
+.backend { cursor: pointer; background: transparent; }
+.backend.hindsight { font-weight: 600; }
+.guide-btn { font-size: 12px; }
+.head-buttons { display: flex; gap: 8px; }
+.console { display: grid; gap: 16px; }
+.bank { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.bank-id { display: flex; gap: 12px; align-items: center; }
+.bank-title { font-weight: 700; font-size: 16px; }
+.bank-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--muted); }
+.bank-dot.live { background: var(--approve); box-shadow: 0 0 0 4px var(--approve-soft); animation: pulse 2s infinite; }
+@keyframes pulse { 50% { box-shadow: 0 0 0 7px transparent; } }
+.bank-stats { display: flex; gap: 28px; margin-left: auto; text-align: center; }
+.bank-explain { flex-basis: 100%; margin: 0; }
+.console-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; align-items: start; }
+.ask-row { display: flex; gap: 8px; margin: 8px 0; }
+.ask-row input, .ask-row select {
+  font: inherit; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--text);
+}
+.ask-row input { flex: 1; min-width: 0; }
+.ask-row select { max-width: 200px; }
+.examples { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.example { font-size: 12px; border-radius: 999px; padding: 3px 10px; color: var(--muted); }
+.example:hover:not(:disabled) { color: var(--brand); border-color: var(--brand); }
+.answer { background: var(--bg); border-radius: 10px; padding: 12px 16px; margin-top: 8px; }
+.feed ul { list-style: none; margin: 0; padding: 0; max-height: 560px; overflow-y: auto; }
+.feed li { display: flex; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+.feed li.failed { opacity: 0.7; }
+.feed-body { font-size: 13px; min-width: 0; overflow-wrap: anywhere; }
+.op { font-size: 10px; font-weight: 700; letter-spacing: 0.05em; padding: 2px 6px; border-radius: 4px; min-width: 62px; text-align: center; }
+.op-retain { background: var(--approve-soft); color: var(--approve); }
+.op-recall { background: var(--brand-soft); color: var(--brand); }
+.op-reflect { background: var(--hold-soft); color: var(--hold); }
+.op-reset { background: var(--escalate-soft); color: var(--escalate); }
+
+.compare { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.compare-col { border: 1px dashed var(--border); border-radius: 10px; padding: 10px 12px; }
+.compare-col.hl { border: 1px solid var(--brand); background: color-mix(in srgb, var(--brand-soft) 35%, var(--panel)); }
+.compare-col p { margin: 8px 0 4px; }
+.close-cmp { position: absolute; top: -6px; right: -6px; padding: 0 6px; }
+
+.guide { margin: 12px auto 0; max-width: 1500px; width: calc(100% - 40px); }
+.guide ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.guide li { display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+.guide li button { white-space: nowrap; }
+
+.toasts { position: fixed; right: 16px; bottom: 16px; display: grid; gap: 8px; z-index: 20; max-width: 360px; }
+.toast { background: var(--panel); border: 1px solid var(--border); border-left: 4px solid var(--brand); border-radius: 10px; padding: 10px 14px; box-shadow: 0 6px 24px rgba(0,0,0,.15); animation: slidein .2s ease-out; }
+.toast.memory { border-left-color: var(--approve); }
+.toast.memory b::before { content: "✓ "; color: var(--approve); }
+.toast.error { border-left-color: var(--escalate); }
+@keyframes slidein { from { transform: translateY(8px); opacity: 0; } }
+
+@media (max-width: 900px) {
+  .console-grid, .compare { grid-template-columns: 1fr; }
+  .bank-stats { margin-left: 0; }
+  .guide li { flex-direction: column; align-items: flex-start; }
+}
+
+/* keep wide tables from pushing the page sideways */
+.queue-layout > *, .vendors-layout > * { min-width: 0; }
+.table-scroll { overflow-x: auto; }
+@media (max-width: 1100px) {
+  .queue-layout, .vendors-layout { grid-template-columns: 300px 1fr; }
+  .invoice { padding: 16px; }
+}

@@ -10,11 +10,15 @@ import json
 import logging
 import math
 import re
+import time
 import uuid
+from collections import deque
+from contextlib import asynccontextmanager
 from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Protocol
+from urllib.parse import urlparse
 
 from .config import get_settings
 
@@ -59,7 +63,7 @@ class MemoryBackend(Protocol):
     async def retain(self, content: str, tags: list[str], metadata: dict[str, str],
                      timestamp: datetime, document_id: str) -> None: ...
     async def recall(self, query: str, tags: list[str], limit: int) -> list[MemoryItem]: ...
-    async def reflect(self, query: str, tags: list[str]) -> str: ...
+    async def reflect(self, query: str, tags: list[str]) -> tuple[str, list[MemoryItem]]: ...
     async def reset(self) -> None: ...
 
 
@@ -99,11 +103,15 @@ class HindsightBackend:
                             timestamp=r.occurred_start or r.mentioned_at) for r in resp.results]
         return items[:limit]
 
-    async def reflect(self, query, tags) -> str:
+    async def reflect(self, query, tags) -> tuple[str, list[MemoryItem]]:
+        kwargs: dict[str, Any] = {"tags": tags, "tags_match": "any_strict"} if tags else {}
         resp = await self.client.areflect(
-            bank_id=self.bank_id, query=query, tags=tags, tags_match="any_strict", budget="mid",
+            bank_id=self.bank_id, query=query, budget="mid", include_facts=True, **kwargs,
         )
-        return resp.text
+        facts = (resp.based_on.memories or []) if resp.based_on else []
+        evidence = [MemoryItem(id=f.id or f"fact-{i}", text=f.text, timestamp=f.occurred_start)
+                    for i, f in enumerate(facts)]
+        return resp.text, evidence
 
     async def reset(self) -> None:
         try:
@@ -173,21 +181,24 @@ class LocalBackend:
         return [MemoryItem(id=m["id"], text=m["text"], tags=m["tags"], timestamp=m["timestamp"],
                            score=round(s, 3)) for s, _, m in scored[:limit]]
 
-    async def reflect(self, query, tags) -> str:
+    async def reflect(self, query, tags) -> tuple[str, list[MemoryItem]]:
         from . import llm
 
-        pool = sorted(self._tagged(tags), key=lambda m: m["timestamp"])
+        pool = sorted(self._tagged(tags), key=lambda m: m["timestamp"])[-40:]
         if not pool:
-            return "No memories for this vendor yet."
-        facts = "\n".join(f"- {m['text']}" for m in pool[-40:])
+            return "No memories yet.", []
+        evidence = [MemoryItem(id=m["id"], text=m["text"], tags=m["tags"], timestamp=m["timestamp"])
+                    for m in pool]
+        facts = "\n".join(f"- {m['text']}" for m in pool)
         try:
-            return await llm.complete_text([
+            text = await llm.complete_text([
                 {"role": "system", "content": BANK_MISSION + " Answer only from the memories given."},
                 {"role": "user", "content": f"Memories:\n{facts}\n\n{query}"},
             ])
         except Exception as e:
             log.warning("local reflect LLM failed: %s", e)
-            return "LLM unavailable; raw memories:\n" + facts
+            text = "LLM unavailable; raw memories:\n" + facts
+        return text, evidence
 
     async def reset(self) -> None:
         self.items = []
@@ -198,14 +209,43 @@ class LocalBackend:
 # Public API used by the rest of the app
 # ---------------------------------------------------------------------------
 class MemoryService:
-    """Owns the backend and the global MEMORY ON/OFF switch."""
+    """Owns the backend, the global MEMORY ON/OFF switch and a live log of memory operations."""
 
-    def __init__(self, backend: MemoryBackend):
+    def __init__(self, backend: MemoryBackend, bank_id: str = "", host: str | None = None):
         self.backend = backend
         self.enabled = True
+        self.bank_id = bank_id
+        self.host = host
+        self.activity: deque[dict[str, Any]] = deque(maxlen=200)
+        self.counts: dict[str, int] = {"retain": 0, "recall": 0, "reflect": 0}
+        self._seq = 0
 
     async def setup(self) -> None:
         await self.backend.setup()
+
+    @asynccontextmanager
+    async def _track(self, op: str, summary: str, vendor_id: str | None = None):
+        """Time one memory operation and add it to the activity feed (also on failure)."""
+        started = time.perf_counter()
+        entry: dict[str, Any] = {"op": op, "summary": summary, "vendor_id": vendor_id, "ok": True,
+                                 "at": datetime.now().isoformat(timespec="seconds"), "result": None}
+        try:
+            yield entry
+        except Exception as e:
+            entry.update(ok=False, result=f"{type(e).__name__}: {e}"[:200])
+            raise
+        finally:
+            self._seq += 1
+            entry["id"] = self._seq
+            entry["ms"] = int((time.perf_counter() - started) * 1000)
+            if entry["ok"] and op in self.counts:
+                self.counts[op] += 1
+            self.activity.appendleft(entry)
+
+    def info(self) -> dict[str, Any]:
+        """Backend identity and counters for the memory console."""
+        return {"backend": self.backend.name, "bank_id": self.bank_id, "host": self.host,
+                "enabled": self.enabled, "counts": dict(self.counts)}
 
     async def retain_decision(
         self, invoice: dict[str, Any], vendor: dict[str, Any], flags: list[dict[str, Any]],
@@ -215,41 +255,65 @@ class MemoryService:
         text = format_decision_memory(invoice, vendor, flags, action, clerk_note)
         when = decided_at or datetime.fromisoformat(invoice["date"])
         tags = [f"vendor:{vendor['id']}", f"decision:{action}"] + sorted({f"flag:{f['code']}" for f in flags})
-        await self.backend.retain(
-            content=text, tags=tags, timestamp=when, document_id=f"decision-{invoice['id']}",
-            metadata={"invoice_id": invoice["id"], "vendor_id": vendor["id"], "decision": action},
-        )
+        async with self._track("retain", f"{action} {invoice['invoice_number']} ({vendor['name']})",
+                               vendor["id"]) as entry:
+            await self.backend.retain(
+                content=text, tags=tags, timestamp=when, document_id=f"decision-{invoice['id']}",
+                metadata={"invoice_id": invoice["id"], "vendor_id": vendor["id"], "decision": action},
+            )
+            entry["result"] = text
         return text
 
     async def recall_vendor_history(
-        self, vendor: dict[str, Any], flags: list[dict[str, Any]], limit: int = 10
+        self, vendor: dict[str, Any], flags: list[dict[str, Any]], limit: int = 10, force: bool = False
     ) -> list[MemoryItem]:
         """Recall past decisions for this vendor relevant to these exceptions.
 
-        Returns [] when memory is switched off (the before/after demo toggle).
+        Returns [] when memory is switched off (the before/after demo toggle) unless ``force``.
         """
-        if not self.enabled:
+        if not self.enabled and not force:
             return []
         query = (f"How did the AP clerk handle {vendor['name']} ({vendor['id']}) invoices with "
                  + "; ".join(f"{f['code']}: {f['message']}" for f in flags) + "?")
-        return await self.backend.recall(query, tags=[f"vendor:{vendor['id']}"], limit=limit)
+        codes = ", ".join(sorted({f["code"] for f in flags}))
+        async with self._track("recall", f"{vendor['name']}: {codes}", vendor["id"]) as entry:
+            items = await self.backend.recall(query, tags=[f"vendor:{vendor['id']}"], limit=limit)
+            entry["result"] = f"{len(items)} memories"
+        return items
 
-    async def build_vendor_profile(self, vendor: dict[str, Any]) -> str:
-        """Synthesise a vendor profile from all its memories via reflect."""
-        return await self.backend.reflect(
-            PROFILE_QUERY.format(name=vendor["name"], vendor_id=vendor["id"]),
-            tags=[f"vendor:{vendor['id']}"],
-        )
+    async def build_vendor_profile(self, vendor: dict[str, Any]) -> tuple[str, list[MemoryItem]]:
+        """Synthesise a vendor profile from all its memories via reflect. Returns (text, evidence)."""
+        async with self._track("reflect", f"profile of {vendor['name']}", vendor["id"]) as entry:
+            text, evidence = await self.backend.reflect(
+                PROFILE_QUERY.format(name=vendor["name"], vendor_id=vendor["id"]),
+                tags=[f"vendor:{vendor['id']}"],
+            )
+            entry["result"] = f"based on {len(evidence)} memories"
+        return text, evidence
+
+    async def ask(self, question: str, vendor: dict[str, Any] | None = None) -> tuple[str, list[MemoryItem]]:
+        """Free-form question over the whole bank (or one vendor) via reflect."""
+        scope = vendor["name"] if vendor else "all vendors"
+        async with self._track("reflect", f'ask ({scope}): "{question[:80]}"',
+                               vendor["id"] if vendor else None) as entry:
+            text, evidence = await self.backend.reflect(
+                question, tags=[f"vendor:{vendor['id']}"] if vendor else [])
+            entry["result"] = f"based on {len(evidence)} memories"
+        return text, evidence
 
     async def list_vendor_memories(self, vendor: dict[str, Any], limit: int = 30) -> list[MemoryItem]:
         """Everything remembered about a vendor (ignores the toggle; used by the profile page)."""
-        return await self.backend.recall(
-            f"All AP decisions for {vendor['name']} ({vendor['id']})",
-            tags=[f"vendor:{vendor['id']}"], limit=limit)
+        async with self._track("recall", f"browse {vendor['name']}", vendor["id"]) as entry:
+            items = await self.backend.recall(
+                f"All AP decisions for {vendor['name']} ({vendor['id']})",
+                tags=[f"vendor:{vendor['id']}"], limit=limit)
+            entry["result"] = f"{len(items)} memories"
+        return items
 
     async def reset(self) -> None:
         """Wipe the bank."""
-        await self.backend.reset()
+        async with self._track("reset", f"wipe bank {self.bank_id}"):
+            await self.backend.reset()
 
 
 def format_decision_memory(
@@ -272,4 +336,5 @@ def create_memory_service() -> MemoryService:
     else:
         log.warning("HINDSIGHT_BASE_URL not set: using local memory stand-in")
         backend = LocalBackend(s.var_dir / "local_memory.json")
-    return MemoryService(backend)
+    host = urlparse(s.hindsight_base_url).netloc if s.hindsight_base_url else None
+    return MemoryService(backend, bank_id=s.bank_id, host=host)

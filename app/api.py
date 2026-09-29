@@ -14,6 +14,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+from . import llm
 from .config import ROOT, get_settings
 from .memory import create_memory_service
 from .service import LedgerLens
@@ -69,6 +70,11 @@ class ReplayIn(BaseModel):
     through_day: int = Field(30, ge=1, le=30)
 
 
+class AskIn(BaseModel):
+    question: str = Field(..., min_length=3, max_length=500)
+    vendor_id: str | None = None
+
+
 class ResetIn(BaseModel):
     memory: bool = True
     queue: bool = True
@@ -78,8 +84,8 @@ class ResetIn(BaseModel):
 async def health() -> dict:
     s = get_settings()
     return {"memory_backend": service().memory.backend.name, "memory_enabled": service().memory.enabled,
-            "bank_id": s.bank_id, "llm_configured": bool(s.groq_api_key),
-            "models": [s.groq_model, s.groq_fallback_model]}
+            "bank_id": s.bank_id, "memory_host": service().memory.host,
+            "llm_configured": bool(s.groq_api_key), "models": llm.models()}
 
 
 @app.get("/api/invoices")
@@ -97,6 +103,15 @@ async def get_invoice(invoice_id: str) -> dict:
 async def suggest(invoice_id: str) -> dict:
     _invoice_or_404(invoice_id)
     return await service().suggest(invoice_id)
+
+
+@app.post("/api/invoices/{invoice_id}/compare")
+async def compare(invoice_id: str) -> dict:
+    _invoice_or_404(invoice_id)
+    try:
+        return await service().compare(invoice_id)
+    except ValueError as e:
+        raise HTTPException(400, str(e))
 
 
 @app.post("/api/invoices/{invoice_id}/decision")
@@ -125,13 +140,27 @@ async def vendor_memories(vendor_id: str) -> list[dict]:
 @app.get("/api/vendors/{vendor_id}/profile")
 async def vendor_profile(vendor_id: str) -> dict:
     v = _vendor_or_404(vendor_id)
-    return {"vendor": v, "profile": await service().memory.build_vendor_profile(v),
+    text, evidence = await service().memory.build_vendor_profile(v)
+    return {"vendor": v, "profile": text, "evidence": [m.to_dict() for m in evidence],
             "backend": service().memory.backend.name}
 
 
 @app.get("/api/memory")
 async def memory_state() -> dict:
-    return {"enabled": service().memory.enabled, "backend": service().memory.backend.name}
+    return service().memory.info()
+
+
+@app.get("/api/memory/activity")
+async def memory_activity(limit: int = 60) -> list[dict]:
+    return list(service().memory.activity)[:limit]
+
+
+@app.post("/api/memory/ask")
+async def memory_ask(body: AskIn) -> dict:
+    vendor = _vendor_or_404(body.vendor_id) if body.vendor_id else None
+    text, evidence = await service().memory.ask(body.question, vendor)
+    return {"answer": text, "evidence": [m.to_dict() for m in evidence],
+            "backend": service().memory.backend.name}
 
 
 @app.post("/api/memory/toggle")

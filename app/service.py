@@ -3,11 +3,13 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import time
+from collections import defaultdict
 from datetime import datetime
 from typing import Any
 
 from . import agent
-from .memory import MemoryService
+from .memory import MemoryService, format_decision_memory
 from .store import Store
 
 log = logging.getLogger(__name__)
@@ -25,6 +27,8 @@ class LedgerLens:
         self.replay_status: dict[str, Any] = {"running": False, "done": 0, "total": 0,
                                               "current": None, "error": None, "through_day": None}
         self._replay_task: asyncio.Task | None = None
+        self._pending: dict[str, list[asyncio.Task]] = defaultdict(list)
+        self._retain_sem = asyncio.Semaphore(6)
 
     # ---- queue ---------------------------------------------------------------
     def queue(self) -> list[dict[str, Any]]:
@@ -63,17 +67,47 @@ class LedgerLens:
         self.store.record_suggestion(invoice_id, s)
         return s
 
-    async def decide(self, invoice_id: str, action: str, note: str, decided_by: str = "clerk") -> dict[str, Any]:
-        """Record the clerk's decision and retain it in memory (exceptions only)."""
+    async def compare(self, invoice_id: str) -> dict[str, Any]:
+        """Run the agent twice on the same invoice, with and without recalled memory.
+
+        Nothing is stored; this is the one-click before/after for the memory criterion.
+        """
+        ctx = self.store.context(invoice_id)
+        if not ctx["flags"]:
+            raise ValueError("clean invoice: nothing to compare")
+        memories = await self.memory.recall_vendor_history(ctx["vendor"], ctx["flags"], force=True)
+        with_mem, without_mem = await asyncio.gather(
+            agent.suggest(ctx["invoice"], ctx["vendor"], ctx["flags"], memories, memory_enabled=True),
+            agent.suggest(ctx["invoice"], ctx["vendor"], ctx["flags"], [], memory_enabled=False),
+        )
+        return {"with_memory": with_mem.to_dict(), "without_memory": without_mem.to_dict(),
+                "recalled": [m.to_dict() for m in memories]}
+
+    async def decide(
+        self, invoice_id: str, action: str, note: str, decided_by: str = "clerk", background: bool = False
+    ) -> dict[str, Any]:
+        """Record the clerk's decision and retain it in memory (exceptions only).
+
+        With ``background=True`` (replay) the retain runs as a task; the replay waits for a
+        vendor's pending retains before that vendor's next suggestion, so learning order holds.
+        """
         if action not in agent.ACTIONS:
             raise ValueError(f"action must be one of {agent.ACTIONS}")
         ctx = self.store.context(invoice_id)
         sug = ctx["suggestion"]
-        memory_text = None
+        memory_text, retain_ms = None, None
         if ctx["flags"]:
-            memory_text = await self.memory.retain_decision(
-                ctx["invoice"], ctx["vendor"], ctx["flags"], action, note)
+            args = (ctx["invoice"], ctx["vendor"], ctx["flags"], action, note)
+            if background:
+                memory_text = format_decision_memory(*args)
+                self._pending[ctx["vendor"]["id"]].append(asyncio.create_task(self._bounded_retain(*args)))
+            else:
+                started = time.perf_counter()
+                memory_text = await self.memory.retain_decision(*args)
+                retain_ms = int((time.perf_counter() - started) * 1000)
         decision = {
+            "retain_ms": retain_ms,
+            "memory_backend": self.memory.backend.name,
             "action": action, "note": note, "decided_by": decided_by,
             "decided_at": datetime.now().isoformat(timespec="seconds"),
             "had_exceptions": bool(ctx["flags"]),
@@ -117,16 +151,32 @@ class LedgerLens:
         self._replay_task = asyncio.create_task(self._replay(todo))
         return self.replay_status
 
+    async def _bounded_retain(self, *args: Any) -> None:
+        async with self._retain_sem:
+            await self.memory.retain_decision(*args)
+
+    async def _flush(self, vendor_id: str | None = None) -> None:
+        """Wait for background retains (one vendor's, or all)."""
+        keys = [vendor_id] if vendor_id else list(self._pending)
+        for k in keys:
+            tasks = self._pending.pop(k, [])
+            if tasks:
+                await asyncio.gather(*tasks)
+
     async def _replay(self, todo: list[dict]) -> None:
         try:
             for inv in todo:
                 self.replay_status["current"] = inv["id"]
+                await self._flush(inv["vendor_id"])  # this vendor's last decision must be in memory
                 await self.suggest(inv["id"])
                 truth = self.store.ground_truth[inv["id"]]
                 has_flags = bool(self.store.flags_for(inv["id"]))
                 await self.decide(inv["id"], truth["expected_action"], truth["clerk_note"],
-                                  decided_by="replay-clerk" if has_flags else "straight-through")
+                                  decided_by="replay-clerk" if has_flags else "straight-through",
+                                  background=True)
                 self.replay_status["done"] += 1
+            self.replay_status["current"] = "saving last memories"
+            await self._flush()
         except Exception as e:  # surface to UI instead of dying silently
             log.exception("replay failed")
             self.replay_status["error"] = f"{type(e).__name__}: {e}"

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { api, fmtINR, type Action, type InvoiceContext } from "../api";
+import { api, fmtINR, type Action, type Compare, type InvoiceContext, type Suggestion } from "../api";
+import { toast } from "../toast";
 import { ActionPill, ConfidenceBar, FlagChip, MemoryCard, Spinner } from "./ui";
 
 const GUARDRAIL_TEXT: Record<string, string> = {
@@ -15,6 +16,8 @@ export default function InvoiceDetail({ id, memoryOn, onChanged }: { id: string;
   const [error, setError] = useState<string | null>(null);
   const [note, setNote] = useState("");
   const [saving, setSaving] = useState<Action | null>(null);
+  const [cmp, setCmp] = useState<Compare | null>(null);
+  const [comparing, setComparing] = useState(false);
 
   const load = () => api.invoice(id).then(setCtx).catch((e) => setError(e.message));
   useEffect(() => {
@@ -41,13 +44,31 @@ export default function InvoiceDetail({ id, memoryOn, onChanged }: { id: string;
   const decide = async (action: Action) => {
     setSaving(action);
     try {
-      await api.decide(id, action, note);
+      const d = await api.decide(id, action, note);
+      if (d.retained_memory) {
+        const where = d.memory_backend === "hindsight" ? "Hindsight Cloud" : "local memory";
+        const secs = d.retain_ms != null ? ` in ${(d.retain_ms / 1000).toFixed(1)}s` : "";
+        toast("memory", `Saved to ${where}${secs}`,
+          `LedgerLens will remember this for ${ctx.vendor.name}'s next invoice.`);
+      }
       await load();
       onChanged();
     } catch (e) {
       setError((e as Error).message);
     } finally {
       setSaving(null);
+    }
+  };
+
+  const compare = async () => {
+    setComparing(true);
+    setError(null);
+    try {
+      setCmp(await api.compare(id));
+    } catch (e) {
+      setError((e as Error).message);
+    } finally {
+      setComparing(false);
     }
   };
 
@@ -78,6 +99,7 @@ export default function InvoiceDetail({ id, memoryOn, onChanged }: { id: string;
         </div>
       </div>
 
+      <div className="table-scroll">
       <table className="match">
         <thead>
           <tr>
@@ -119,6 +141,7 @@ export default function InvoiceDetail({ id, memoryOn, onChanged }: { id: string;
           <tr className="total"><td colSpan={5}>Invoice total (as stated)</td><td className="num">{fmtINR(invoice.total)}</td></tr>
         </tfoot>
       </table>
+      </div>
 
       <div className="section">
         <h3>Three-way match exceptions</h3>
@@ -139,11 +162,25 @@ export default function InvoiceDetail({ id, memoryOn, onChanged }: { id: string;
       <div className="section suggestion-section">
         <div className="section-head">
           <h3>LedgerLens suggestion</h3>
-          <button className="primary" onClick={ask} disabled={loading}>
-            {loading ? <><Spinner /> Recalling memory & reasoning…</> : suggestion ? "Ask again" : "Ask LedgerLens"}
-          </button>
+          <div className="head-buttons">
+            {flags.length > 0 && (
+              <button onClick={compare} disabled={comparing || loading} title="Run the agent with and without memory side by side">
+                {comparing ? <><Spinner /> Comparing…</> : "Compare with memory OFF"}
+              </button>
+            )}
+            <button className="primary" onClick={ask} disabled={loading}>
+              {loading ? <><Spinner /> Recalling memory & reasoning…</> : suggestion ? "Ask again" : "Ask LedgerLens"}
+            </button>
+          </div>
         </div>
         {error && <div className="banner error">{error}</div>}
+        {cmp && (
+          <div className="compare">
+            <CompareCol title="Without memory" s={cmp.without_memory} />
+            <CompareCol title={`With Hindsight memory (${cmp.recalled.length} recalled)`} s={cmp.with_memory} highlight />
+            <button className="ghost small close-cmp" onClick={() => setCmp(null)} aria-label="Close comparison">✕</button>
+          </div>
+        )}
         {suggestion ? (
           <div className={`suggestion act-border-${suggestion.action}`}>
             <div className="sugg-top">
@@ -217,14 +254,31 @@ export default function InvoiceDetail({ id, memoryOn, onChanged }: { id: string;
                 <button key={a} className={`act-btn act-${a}${suggestion?.action === a ? " suggested" : ""}`}
                         onClick={() => decide(a)} disabled={!!saving}>
                   {saving === a ? <Spinner /> : null}
-                  {a[0].toUpperCase() + a.slice(1)}
-                  {suggestion?.action === a && <span className="small"> (suggested)</span>}
+                  {saving === a && flags.length > 0 ? "Saving to memory…" : null}
+                  {saving !== a && a[0].toUpperCase() + a.slice(1)}
+                  {saving !== a && suggestion?.action === a && <span className="small"> (suggested)</span>}
                 </button>
               ))}
             </div>
           </>
         )}
       </div>
+    </div>
+  );
+}
+
+function CompareCol({ title, s, highlight }: { title: string; s: Suggestion; highlight?: boolean }) {
+  return (
+    <div className={`compare-col${highlight ? " hl" : ""}`}>
+      <div className="muted small">{title}</div>
+      <div className="sugg-top">
+        <ActionPill action={s.action} />
+        <ConfidenceBar value={s.confidence} />
+      </div>
+      <p className="small">{s.reason}</p>
+      {s.cited_memories.length > 0 && (
+        <div className="muted small">cites: {s.cited_memories.map((m) => `“${m.text.slice(0, 70)}…”`).join(" · ")}</div>
+      )}
     </div>
   );
 }

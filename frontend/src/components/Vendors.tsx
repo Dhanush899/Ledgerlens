@@ -36,6 +36,7 @@ function VendorProfile({ vendor }: { vendor: Vendor }) {
   const [memories, setMemories] = useState<Memory[] | null>(null);
   const [profile, setProfile] = useState<string | null>(null);
   const [backend, setBackend] = useState<string>("");
+  const [evidence, setEvidence] = useState<Memory[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -50,6 +51,7 @@ function VendorProfile({ vendor }: { vendor: Vendor }) {
       const r = await api.vendorProfile(vendor.id);
       setProfile(r.profile);
       setBackend(r.backend);
+      setEvidence(r.evidence);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -80,6 +82,12 @@ function VendorProfile({ vendor }: { vendor: Vendor }) {
           <div className="profile">
             <Markdown text={profile} />
             <div className="muted small">Synthesised by {backend === "hindsight" ? "Hindsight reflect" : "local reflect (Groq over stored memories)"}.</div>
+            {evidence.length > 0 && (
+              <details>
+                <summary>Based on {evidence.length} memories</summary>
+                <div className="memories">{evidence.map((m) => <MemoryCard key={m.id} m={m} />)}</div>
+              </details>
+            )}
           </div>
         ) : (
           <p className="muted">

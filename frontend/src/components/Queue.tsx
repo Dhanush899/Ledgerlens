@@ -5,7 +5,11 @@ import InvoiceDetail from "./InvoiceDetail";
 
 type Filter = "pending" | "exceptions" | "decided" | "all";
 
-export default function Queue({ version, memoryOn }: { version: number; memoryOn: boolean }) {
+export default function Queue({ version, memoryOn, focus }: {
+  version: number;
+  memoryOn: boolean;
+  focus: { id: string; n: number } | null;
+}) {
   const [rows, setRows] = useState<QueueRow[]>([]);
   const [filter, setFilter] = useState<Filter>("pending");
   const [selected, setSelected] = useState<string | null>(null);
@@ -23,6 +27,15 @@ export default function Queue({ version, memoryOn }: { version: number; memoryOn
       return true;
     });
   }, [rows, filter]);
+
+  // Jump to an invoice requested elsewhere (demo guide).
+  useEffect(() => {
+    if (focus) {
+      setFilter("all");
+      setSelected(focus.id);
+      window.setTimeout(() => document.getElementById(`row-${focus.id}`)?.scrollIntoView({ block: "center" }), 50);
+    }
+  }, [focus]);
 
   useEffect(() => {
     if (!selected && visible.length) setSelected(visible.find((r) => r.flags.length)?.id ?? visible[0].id);
@@ -47,7 +60,7 @@ export default function Queue({ version, memoryOn }: { version: number; memoryOn
         </div>
         <ul className="rows">
           {visible.map((r) => (
-            <li key={r.id} className={`${selected === r.id ? "selected" : ""} ${r.decision ? "done" : ""}`}
+            <li key={r.id} id={`row-${r.id}`} className={`${selected === r.id ? "selected" : ""} ${r.decision ? "done" : ""}`}
                 onClick={() => setSelected(r.id)}>
               <div className="row-top">
                 <span className="vendor">{r.vendor_name}</span>

@@ -61,11 +61,11 @@ flowchart LR
 | Module | Role |
 |---|---|
 | `app/rules.py` | Three-way match. Flags `PRICE_VARIANCE`, `QTY_MISMATCH`, `MISSING_PO`, `DUPLICATE` (fuzzy number + amount + vendor), `TAX_MISMATCH`, `UNEXPECTED_LINE`, `TOTAL_MISMATCH`. No learning here. |
-| `app/memory.py` | Thin Hindsight wrapper: `retain_decision`, `recall_vendor_history`, `build_vendor_profile`, plus the MEMORY ON/OFF switch and the local stand-in. |
+| `app/memory.py` | Thin Hindsight wrapper: `retain_decision`, `recall_vendor_history`, `build_vendor_profile`, `ask`, plus the MEMORY ON/OFF switch, a live log of every memory call and the local stand-in. |
 | `app/agent.py` | LLM call returning `{action, confidence, reason, cited_memories}`. JSON validation, retries, model fallback, deterministic guardrails, safe `escalate` fallback. |
-| `app/service.py` | Orchestration, month replay, learning-curve metrics. |
+| `app/service.py` | Orchestration, with/without-memory comparison, month replay (retains in the background, but waits for a vendor's pending retains before that vendor's next invoice), learning-curve metrics. |
 | `app/api.py` | FastAPI endpoints (below). |
-| `frontend/` | React + Vite: invoice queue, suggestion card with cited memories, clerk decision, vendor profiles, learning curve, memory toggle. |
+| `frontend/` | React + Vite: invoice queue, suggestion card with cited memories, one-click "compare with memory OFF", clerk decision with a "saved to Hindsight" confirmation, vendor profiles with reflect evidence, the Hindsight console (bank status, live retain/recall/reflect feed, "Ask your AP memory"), learning curve, memory toggle, and a guided demo. |
 
 ### API
 
@@ -73,8 +73,11 @@ flowchart LR
 |---|---|---|
 | GET | `/api/invoices`, `/api/invoices/{id}` | Queue and invoice with PO, GRNs, flags, suggestion, decision |
 | POST | `/api/invoices/{id}/suggest` | Recall + agent suggestion |
+| POST | `/api/invoices/{id}/compare` | Same invoice through the agent with and without recalled memory (nothing stored) |
 | POST | `/api/invoices/{id}/decision` | `{action, note}`: records and **retains** the decision |
 | GET | `/api/vendors`, `/api/vendors/{id}/memories`, `/api/vendors/{id}/profile` | Vendor list, recalled memories, reflect profile |
+| GET | `/api/memory`, `/api/memory/activity` | Bank, host and call counters; live feed of retain / recall / reflect calls with timings |
+| POST | `/api/memory/ask` | `{question, vendor_id?}`: reflect over the whole bank or one vendor, with the evidence used |
 | POST | `/api/memory/toggle`, `/api/memory/seed`, `/api/reset` | Memory ON/OFF, seed August history, wipe |
 | POST/GET | `/api/replay` | Replay September through day N in the background, and its progress |
 | GET | `/api/metrics` | Weekly human-needed rate, agreement |
@@ -98,9 +101,15 @@ memory and a retain mission that says to keep numbers exact.
    `tags=["vendor:<id>"], tags_match="any_strict"`, so one vendor's habits never leak into another's.
    The recalled memories go to the LLM as `[M1]…[Mn]`. It must cite the ones it relied on, and the
    UI highlights them on the suggestion card.
-3. **reflect for vendor profiles.** Reflect over all of a vendor's memories produces a handling
-   guide: accepted quirks with their typical magnitudes, what was held, and guidance for the next
-   invoice.
+3. **reflect for vendor profiles and questions.** Reflect over all of a vendor's memories produces a
+   handling guide: accepted quirks with their typical magnitudes, what was held, and guidance for
+   the next invoice. The Hindsight console also lets anyone ask the bank a question ("Which vendors
+   bill freight separately?"). Both show the memories reflect was `based_on` (`include_facts=True`).
+
+Making the memory visible: the **Hindsight** tab shows the live bank, counters and a feed of every
+retain / recall / reflect call with its latency. Every decision pops up a "Saved to Hindsight Cloud"
+confirmation, and **Compare with memory OFF** runs the same invoice through the agent with and
+without recall, side by side.
 
 Memory **informs**, guardrails **bound**:
 - no approval without at least one cited precedent (with memory off, this is why every
@@ -130,6 +139,9 @@ clerk during replay and is never shown to the agent.
 
 ## Demo script
 
+The **Demo guide** button in the header walks through these steps with one-click buttons that
+open the right invoice or tab.
+
 1. **Fresh memory.** Learning → *Reset all*. In the queue, open INV-0001 (Deccan Steel, freight
    1.45%) → *Ask LedgerLens* → **escalate** (no precedent). Approve with the note "Freight under 2%
    is agreed in contract". The retained memory is shown.
@@ -140,7 +152,13 @@ clerk during replay and is never shown to the agent.
 4. **Vendor profile.** Vendor memory → *Build profile from memory* (reflect). The learning-curve
    chart shows human-needed exceptions dropping week over week.
 5. **Memory OFF.** Toggle it in the header and ask again on any quirky invoice. It escalates like a
-   generic rules bot.
+   generic rules bot. Or use **Compare with memory OFF** on the suggestion card for a side-by-side.
+6. **Ask the memory.** Hindsight tab → ask "Which vendors bill freight separately?" and watch the
+   retain / recall / reflect calls land in the live activity feed.
+
+The main Groq model has a daily token quota on the free tier (about one full-month replay). When it
+runs out, the agent switches to the fallback models automatically. Run the replay before presenting:
+it takes a few minutes because each Hindsight retain does server-side extraction.
 
 Shortcut: *Seed August history* before replaying and the agent starts September already knowing
 every vendor.
